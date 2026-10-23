@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layoutDirection="ltr">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginStart="@dimen/margin_start"
+            android:padding="@dimen/default_padding_small"
+            android:background="@drawable/outline_border_circle"
+            app:srcCompat="@drawable/ic_close"
+            android:tint="@color/colorOnSurface"
+            android:id="@+id/img_close" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_big"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginEnd="@dimen/margin_end"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/ic_reminder"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_big"
+            style="@style/TextVeryLarge"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorOnSurface"
+            android:text="@string/reminded"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            style="@style/TextMedium"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorOnSurface"
+            android:text="@string/all_you_need_to_know_to_explore_the_city"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginEnd="@dimen/margin_end"
+            app:cardCornerRadius="@dimen/default_radius"
+            app:contentPadding="@dimen/default_padding_small"
+            app:cardElevation="@dimen/default_elevation"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_marginTop="@dimen/margin_top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    style="@style/TextVeryLarge"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/took_my_aligner_off_at"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="@color/colorOutline"/>
+
+                <com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker
+                    android:id="@+id/single_day_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:picker_itemSpacing="6dp"
+                    app:picker_curvedMaxAngle="45"
+                    app:picker_curved="true"
+                    app:picker_selectorColor="@android:color/transparent"
+                    app:picker_stepSizeHours="1"
+                    app:picker_stepSizeMinutes="1"
+                    app:picker_mustBeOnFuture="true"
+                    app:picker_selectedTextColor="@color/colorPrimary"
+                    app:picker_visibleItemCount="5"
+                    app:picker_textSize="@dimen/very_large_font"
+                    app:fontFamily="@font/font_family_moona_sans" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/margin_top_big"
+            style="@style/PrimaryButtonGradient"
+            android:drawableTint="@color/colorOnBackground"
+            android:text="@string/add_reminder"
+            android:id="@+id/btn_apply"/>
+
+    </LinearLayout>
+</layout>

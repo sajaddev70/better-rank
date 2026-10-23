@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="guestName" type="String" />
+        <variable name="guestLanguage" type="String" />
+        <variable name="vm" type="com.marveloushost.betterrank.viewModel.SendInstructionsViewModel" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <!-- TOP BAR -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:src="@drawable/ic_arrow_left"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:padding="4dp" />
+
+            <TextView
+                android:text="Send Instructions"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- LANGUAGE SELECTION (STATIC AREA) -->
+        <RadioGroup
+            android:id="@+id/rgLanguage"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbEnglish"
+                android:text="English"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rbGuestLang"
+                android:text='@{guestLanguage}'
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <!-- SCROLLABLE CHECKBOX SECTION ONLY -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox android:id="@+id/cb1" android:text="Host &amp; Welcome" android:layout_height="35dp" android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cb2" android:text="Contact Info" android:layout_height="35dp" android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cb3" android:text="Property Basics" android:layout_height="35dp" android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cb4" android:text="Address &amp; Access" android:layout_height="35dp" android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cb5" android:text="Check-in &amp; Access" android:layout_height="35dp" android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cb6" android:text="House Rules" android:layout_height="35dp" android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cb7" android:text="Check-out" android:layout_height="35dp" android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cb8" android:text="Amenities" android:layout_height="35dp" android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cb9" android:text="Neighborhood Info" android:layout_height="35dp" android:layout_width="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- TRANSLATION PROGRESS BOX (Visible when translating) -->
+        <LinearLayout
+            android:id="@+id/translationBoxRoot"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/tertiary_background_gradient">
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:text="Translating instructions…"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16sp" android:layout_height="wrap_content" android:layout_width="match_parent"/>
+
+            <TextView
+                android:id="@+id/tvCounter"
+                android:text="240"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginTop="12dp" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <!-- BOTTOM BUTTONS ALWAYS FIXED -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTranslate"
+            android:text="Translate"
+            android:textAllCaps="false"
+            android:enabled="false"
+            style="@style/TertiaryButtonGradient2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSend"
+            android:text="Confirm &amp; Send"
+            android:textAllCaps="false"
+            style="@style/PrimaryButtonGradient2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:enabled="false"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+</layout>

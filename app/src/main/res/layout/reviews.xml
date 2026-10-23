@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable name="viewModel" type="com.marveloushost.betterrank.viewModel.ReviewsViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/action_bar" android:id="@+id/baseActionBar">
+            <!-- REMOVE imgStart onClick -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgStart"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_arrow_left"
+                android:contentDescription="Back"
+                android:visibility="gone" />  <!-- HIDE ARROW -->
+        </include>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_reviews"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/baseActionBar"
+            app:layout_constraintBottom_toTopOf="@id/bottomButtons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/review_adapter"/>
+
+        <LinearLayout
+            android:id="@+id/bottomButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_analyze_reviews"
+                android:layout_width="220dp"
+                android:layout_height="48dp"
+                android:text="Analyze the Reviews"
+                style="@style/TertiaryButtonGradient1"
+                android:layout_marginBottom="8dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="220dp"
+                android:layout_height="48dp"
+                android:id="@+id/btn_back"
+                android:text="Back"
+                style="@style/SurfaceButton" />
+        </LinearLayout>
+
+        <include layout="@layout/loading"
+            android:id="@+id/baseLoading"
+            android:visibility="@{viewModel.isLoading?View.VISIBLE:View.GONE,default=gone}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

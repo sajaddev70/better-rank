@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="viewModel" type="com.marveloushost.betterrank.viewModel.HomeGuideViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="@color/colorOnPrimary"
+                    app:srcCompat="@drawable/ic_search"
+                    android:padding="@dimen/default_padding_small"
+                    android:background="@drawable/primary_background_gradient2"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"
+                    android:text="Location and Access"/>
+            </LinearLayout>
+
+            <!-- Property Address -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:layout_marginTop="@dimen/margin_start"
+                    android:maxLines="1"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="Property address"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_very_small"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:gravity="top|start"
+                    style="@style/BackgroundContainerEditText1"
+                    android:textColor="@color/colorOnBackgroundContainer"
+                    android:padding="2dp"
+                    android:hint=""
+                    android:text="@={viewModel.resultUpdateHomeGuide.propertyAddress}" />
+            </LinearLayout>
+
+            <!-- Local Language -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:maxLines="1"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="Property address in local language"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_very_small"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:gravity="top|start"
+                    style="@style/BackgroundContainerEditText1"
+                    android:textColor="@color/colorOnBackgroundContainer"
+                    android:padding="2dp"
+                    android:hint=""
+                    android:text="@={viewModel.resultUpdateHomeGuide.propertyAddressLocal}" />
+            </LinearLayout>
+
+            <!-- Google Maps Link -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:maxLines="1"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="Google maps link"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:inputType="textMultiLine|textUri"
+                    android:layout_marginTop="@dimen/margin_top_very_small"
+                    android:minLines="5"
+                    android:gravity="top|start"
+                    style="@style/BackgroundContainerEditText1"
+                    android:textColor="@color/colorOnBackgroundContainer"
+                    android:drawableStart="@drawable/ic_link"
+                    app:drawableTint="@color/colorOnBackgroundContainer"
+                    android:padding="2dp"
+                    android:hint=""
+                    android:text="@={viewModel.resultUpdateHomeGuide.googleMapsLink}" />
+            </LinearLayout>
+
+            <!-- How to Reach Airport -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:maxLines="1"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="How to reach the house from Airport"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:gravity="top|start"
+                    android:layout_marginTop="@dimen/margin_top_very_small"
+                    style="@style/BackgroundContainerEditText1"
+                    android:textColor="@color/colorOnBackgroundContainer"
+                    android:padding="2dp"
+                    android:hint=""
+                    android:text="@={viewModel.resultUpdateHomeGuide.howToReachAirport}" />
+            </LinearLayout>
+
+            <!-- How to Reach Train -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:maxLines="1"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="How to reach the house from Train Station"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:gravity="top|start"
+                    android:layout_marginTop="@dimen/margin_top_very_small"
+                    style="@style/BackgroundContainerEditText1"
+                    android:textColor="@color/colorOnBackgroundContainer"
+                    android:padding="2dp"
+                    android:hint=""
+                    android:text="@={viewModel.resultUpdateHomeGuide.howToReachTrain}" />
+            </LinearLayout>
+
+            <!-- How to Reach Car -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:maxLines="1"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="How to reach the house by car"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:gravity="top|start"
+                    android:layout_marginTop="@dimen/margin_top_very_small"
+                    style="@style/BackgroundContainerEditText1"
+                    android:textColor="@color/colorOnBackgroundContainer"
+                    android:padding="2dp"
+                    android:hint=""
+                    android:text="@={viewModel.resultUpdateHomeGuide.howToReachCar}" />
+            </LinearLayout>
+
+            <!-- How to Find -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:maxLines="1"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="How to find the house"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:gravity="top|start"
+                    android:layout_marginTop="@dimen/margin_top_very_small"
+                    style="@style/BackgroundContainerEditText1"
+                    android:textColor="@color/colorOnBackgroundContainer"
+                    android:padding="2dp"
+                    android:hint=""
+                    android:text="@={viewModel.resultUpdateHomeGuide.howToFind}" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.marveloushost.betterrank.viewModel.RegisterViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr"
+        android:background="@color/colorSurface">
+
+        <include layout="@layout/action_bar"
+            android:id="@+id/baseActionBar"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@id/baseActionBar"
+            app:layout_constraintBottom_toBottomOf="@id/baseActionBar"
+            app:layout_constraintEnd_toEndOf="@id/baseActionBar"
+            android:text="@string/register"
+            style="@style/TextMedium"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorOnSurface"
+            android:layout_marginEnd="@dimen/margin_end_small"
+            android:id="@+id/register"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_top_big"
+            app:layout_constraintTop_toBottomOf="@id/baseActionBar">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start"
+                style="@style/TextVeryLarge"
+                android:textColor="@color/colorOnSurface"
+                android:text="@string/let_s_get_started"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginTop="@dimen/margin_top_small"
+                style="@style/TextMedium"
+                android:textColor="@color/colorOnSurface"
+                android:text="@string/your_profile_sync"
+                app:drawableEndCompat="@drawable/ic_google_small"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:id="@+id/cl_profile">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:civ_border_width="1dp"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="@color/colorOutline"
+                    app:srcCompat="@drawable/intro1"
+                    android:id="@+id/img_profile"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_edit"
+                    android:padding="@dimen/default_padding_so_small"
+                    android:layout_marginEnd="@dimen/margin_end_small"
+                    app:layout_constraintBottom_toBottomOf="@id/img_profile"
+                    app:layout_constraintTop_toBottomOf="@id/img_profile"
+                    app:layout_constraintEnd_toEndOf="@id/img_profile"
+                    app:tint="@color/colorOnPrimary"
+                    android:background="@drawable/primary_background1"
+                    android:elevation="@dimen/default_elevation"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="@dimen/default_padding_small"
+                style="@style/BackgroundContainerEditText1"
+                android:textColor="@color/colorOnBackgroundContainer"
+                android:drawableStart="@drawable/ic_user"
+                app:drawableTint="@color/colorOnBackgroundContainer"
+                android:id="@+id/et_fullName"/>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/loading"
+            android:id="@+id/baseLoading"
+            android:visibility="@{viewModel.isLoading?View.VISIBLE:View.GONE,default=gone}"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

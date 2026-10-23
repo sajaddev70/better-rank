@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="viewModel" type="com.marveloushost.betterrank.viewModel.HomeGuideViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="@color/colorOnPrimary"
+                    app:srcCompat="@drawable/ic_home"
+                    android:padding="@dimen/default_padding_small"
+                    android:background="@drawable/primary_background_gradient2"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"
+                    android:text="About the Accommodation"/>
+            </LinearLayout>
+
+            <!-- Property Type Title -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:textColor="@color/colorOnBackground"
+                android:text="Property Type"/>
+
+            <RadioGroup
+                android:id="@+id/rg_property_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="@dimen/margin_start"
+                android:layout_marginBottom="16dp"
+                android:checkedButton="@{viewModel.resultUpdateHomeGuide.propertyType == `Entire House` ? @id/rb_entire_house : @id/rb_room}">
+
+                <RadioButton
+                    android:id="@+id/rb_entire_house"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Entire House"
+                    android:onClick="@{() -> viewModel.setPropertyType(`Entire House`)}" />
+
+                <RadioButton
+                    android:id="@+id/rb_room"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Room"
+                    android:onClick="@{() -> viewModel.setPropertyType(`Room`)}" />
+            </RadioGroup>
+
+            <!-- Occupancy -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:maxLines="1"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="Occupancy limit &amp; visitors"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_very_small"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:gravity="top|start"
+                    style="@style/BackgroundContainerEditText1"
+                    android:textColor="@color/colorOnBackgroundContainer"
+                    android:padding="2dp"
+                    android:hint=""
+                    android:text="@={viewModel.resultUpdateHomeGuide.occupancyLimit}" />
+            </LinearLayout>
+
+            <!-- Brief Description -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:maxLines="1"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="Brief Description of the house"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_very_small"
+                    android:minHeight="@dimen/default_height"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:gravity="top|start"
+                    style="@style/BackgroundContainerEditText1"
+                    android:textColor="@color/colorOnBackgroundContainer"
+                    android:padding="2dp"
+                    android:hint=""
+                    android:text="@={viewModel.resultUpdateHomeGuide.briefDescription}" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

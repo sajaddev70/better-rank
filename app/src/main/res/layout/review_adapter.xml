@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable name="review" type="com.marveloushost.betterrank.model.AirBnbResponseModel.ReviewDetail" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginEnd="@dimen/margin_end"
+        app:cardCornerRadius="@dimen/default_radius"
+        app:contentPadding="@dimen/default_padding_small"
+        app:cardElevation="@dimen/default_elevation"
+        android:layout_marginTop="@dimen/margin_top_small"
+        android:layout_marginBottom="@dimen/margin_bottom_very_small">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Author + Rating + Date -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@{review.guestName}"
+                    style="@style/TextMedium"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorOnSurface" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`★★★★★`.substring(0, review.rating.intValue()) + `☆☆☆☆☆`.substring(0, 5 - review.rating.intValue())}"
+                    android:textColor="@color/colorPrimary"
+                    style="@style/TextSmall" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{review.reviewDate != null ? review.reviewDate.substring(0, 10) : ``}"
+                    android:layout_marginStart="8dp"
+                    style="@style/TextVerySmall"
+                    android:textColor="@color/colorOnSurface" />
+            </LinearLayout>
+
+            <!-- Review Text -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{review.reviewText}"
+                android:textColor="@color/colorOnSurface"
+                style="@style/TextMedium"
+                android:minLines="2" />
+
+            <!-- Host Response -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{`Host: ` + review.hostResponse}"
+                android:textColor="@color/colorPrimary"
+                style="@style/TextSmall"
+                android:layout_marginTop="4dp"
+                android:visibility="@{review.hostResponse != null ? View.VISIBLE : View.GONE}" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

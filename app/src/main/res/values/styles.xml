@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RoundedCorner8dp">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="PrimaryButtonLarge" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/primary_background_gradient</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">@dimen/default_radius</item>
+        <item name="android:minWidth">140dp</item>
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+
+    <style name="PrimaryButtonRounded" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/primary_background_gradient2</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="cornerRadius">@dimen/radius_dialog</item>
+        <item name="android:minHeight">50dp</item>
+    </style>
+</resources>

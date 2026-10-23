@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable name="viewModel" type="com.marveloushost.betterrank.viewModel.PdfLanguageViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Main Content -->
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="16dp">
+
+            <!-- City Guide Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="@dimen/default_radius"
+                app:contentPadding="@dimen/default_padding"
+                app:cardElevation="@dimen/default_elevation">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/ic_city_guide"
+                        android:id="@+id/img_cityGuide"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/img_cityGuide"
+                        android:orientation="vertical"
+                        android:paddingEnd="16dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextMedium"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorOnSurface"
+                            android:text="@string/pdf_guide_intro"/>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Language Selection Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="@dimen/default_radius"
+                app:contentPadding="@dimen/default_padding"
+                app:cardElevation="@dimen/default_elevation">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Left Half: Spinner + Other Input -->
+                    <LinearLayout
+                        android:id="@+id/left_half"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/right_half"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/languageInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/spinner_language"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/select_language"
+                                android:inputType="none"
+                                android:entries="@array/languages"
+                                android:importantForAutofill="no"
+                                android:focusable="true" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!-- OTHER LANGUAGE INPUT — USING <include> -->
+                        <include
+                            android:id="@+id/other_language_input"
+                            layout="@layout/other_language_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:visibility="@{viewModel.selectedLanguage.equals(`Other`) ? View.VISIBLE : View.GONE}" />
+                    </LinearLayout>
+
+                    <!-- Translate Button -->
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_translate"
+                        android:layout_width="150dp"
+                        android:layout_height="48dp"
+                        android:text="Translate"
+                        android:textAppearance="@style/TextMedium"
+                        style="@style/PrimaryButtonGradient2"
+                        android:onClick="@{() -> viewModel.translate()}"
+                        app:layout_constraintStart_toStartOf="@id/right_half"
+                        app:layout_constraintEnd_toEndOf="@id/right_half"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                    <View
+                        android:id="@+id/right_half"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintStart_toEndOf="@id/left_half"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <include
+                android:id="@+id/translationBox"
+                layout="@layout/translation_progress_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="40dp"/>
+
+
+
+
+        </LinearLayout>
+
+        <!-- Bottom Buttons -->
+        <LinearLayout
+            android:id="@+id/bottomButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="16dp">
+
+            <!-- DOWNLOAD -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_download"
+                android:layout_width="220dp"
+                android:layout_height="48dp"
+                android:textAppearance="@style/TextMedium"
+                style="@style/TertiaryButtonGradient2"
+                android:text="Download"
+                android:layout_marginBottom="8dp" />
+
+            <!-- SEND -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_send"
+                android:layout_width="220dp"
+                android:layout_height="48dp"
+                android:textAppearance="@style/TextMedium"
+                style="@style/TertiaryButtonGradient2"
+                android:text="Send via WhatsApp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- BACK -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_back"
+                android:layout_width="220dp"
+                android:layout_height="48dp"
+                android:text="Back"
+                style="@style/SurfaceButton"
+                android:layout_marginBottom="8dp"
+                android:onClick="@{() -> viewModel.back()}" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/downloadOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:visibility="gone"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ProgressBar
+            android:id="@+id/downloadProgress"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

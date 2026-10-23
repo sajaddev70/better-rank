@@ -1,0 +1,53 @@
+package com.marveloushost.betterrank.dialog
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.core.text.HtmlCompat
+import androidx.databinding.DataBindingUtil
+import com.marveloushost.betterrank.databinding.BottomSheetDialogBinding
+import com.marveloushost.betterrank.R
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.marveloushost.betterrank.databinding.ProblemImageDialogBinding
+
+class ProblemImageDialog() : BottomSheetDialogFragment() {
+
+    lateinit var binding:ProblemImageDialogBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setStyle(STYLE_NORMAL, R.style.CustomBottomSheetDialogTheme)
+    }
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+
+        binding = DataBindingUtil.inflate(inflater, R.layout.problem_image_dialog, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        //init layout
+        initLayout()
+    }
+
+    private fun initLayout()
+    {
+
+        //TextView
+        binding.txtTitle.text= HtmlCompat.fromHtml(
+            getString(R.string.there_is_a_problem),
+            HtmlCompat.FROM_HTML_MODE_COMPACT
+        )
+
+        binding.imgClose.setOnClickListener {
+            dismiss()
+        }
+
+        binding.btnTryAgain.setOnClickListener {
+            dismiss()
+        }
+    }
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_DOWNLOADS"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:requestLegacyExternalStorage="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:usesCleartextTraffic="true"
+        android:windowOptOutEdgeToEdgeEnforcement="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".hilt.HiltApplication"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Intro" />
+        <activity android:name=".ui.Login" />
+        <activity android:name=".ui.Register" />
+        <activity android:name=".ui.HomeRegister" />
+        <activity android:name=".ui.Main" />
+        <activity
+            android:name=".ui.CityGuide"
+            android:launchMode="singleTop"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AddGuestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.EditGuestActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.HomeGuide"
+            android:launchMode="singleTop"
+            android:exported="false" />
+        <activity android:name=".ui.Reviews" />
+        <activity android:name=".ui.Web" />
+        <activity android:name=".ui.PhotographyGuide" />
+        <activity
+            android:name=".ui.PhotographyHome"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.CreateNote" />
+        <activity android:name=".customView.TakePhoto" />
+        <activity android:name=".ui.PdfLanguageSelection"/>
+        <activity android:name=".ui.PhotoSectionActivity"/>
+        <activity android:name=".ui.MessagingActivity"/>
+        <activity android:name=".ui.InstructionTranslationActivity"/>
+
+        <activity
+            android:name=".ui.ReviewAnalysisActivity"
+            android:exported="false" />
+        <activity android:name=".ui.AIAnalysisActivity" android:exported="false" />
+
+        <receiver
+            android:name=".reminder.AlarmReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".reminder.AlarmDismissReceiver"
+            android:exported="false" />
+
+        <service
+            android:name=".reminder.AlarmSoundService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback"/>
+
+        <service
+            android:name=".pdf.TranslationForegroundService"
+            android:exported="false"
+            android:enabled="true"
+            android:foregroundServiceType="dataSync" />
+        <service
+            android:name=".instructionstranslation.InstructionsTranslationService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+
+    </application>
+    <meta-data
+        android:name="android.support.compat.VectorEnabledTintResources"
+        android:value="true"/>
+
+</manifest>

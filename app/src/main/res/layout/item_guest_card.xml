@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="guest"
+            type="com.marveloushost.betterrank.model.GuestModel" />
+        <variable
+            name="viewModel"
+            type="com.marveloushost.betterrank.viewModel.GuestsViewModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- NAME + VILLA + EDIT — FULL WIDTH -->
+            <LinearLayout
+                android:id="@+id/infoLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnEdit">
+
+                <!-- Guest Name -->
+                <TextView
+                    android:id="@+id/tvGuestName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{guest.name}"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#1D1D1F"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+
+            </LinearLayout>
+
+            <!-- Edit Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEdit"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="Edit"
+                style="@style/PrimaryButtonGradient2"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+
+                app:iconGravity="textStart"
+                app:backgroundTint="@null"
+                app:iconPadding="6dp"
+                android:textColor="#FFFFFF"
+                android:onClick="@{() -> viewModel.onEditClick(guest.id)}"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- NEW BUTTON below Edit -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnmsg"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="Message"
+                style="@style/TertiaryButtonGradient2"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                app:iconGravity="textStart"
+                app:backgroundTint="@null"
+                app:iconPadding="6dp"
+                android:textColor="#FFFFFF"
+                android:onClick="@{() -> viewModel.onMessageClick(guest)}"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/btnEdit"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+            <!-- CHECK-IN / CHECK-OUT — FULL WIDTH -->
+            <LinearLayout
+                android:id="@+id/tvDates"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/btnmsg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <!-- check-in: (BOLD) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="check-in: "
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#1D1D1F" />
+
+                <!-- check-in value (REGULAR) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{guest.checkIn.substring(0,10).replace('-','/') + ' ' + guest.checkIn.substring(11,16)}"
+                    android:textSize="12sp"
+                    android:textColor="#1D1D1F" />
+
+                <!-- Spacer -->
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="1dp" />
+
+                <!-- check-out: (BOLD) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="check-out: "
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#1D1D1F" />
+
+                <!-- check-out value (REGULAR) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{guest.checkOut.substring(0,10).replace('-','/') + ' ' + guest.checkOut.substring(11,16)}"
+                    android:textSize="12sp"
+                    android:textColor="#1D1D1F" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

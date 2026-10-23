@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/guests"
+        android:icon="@drawable/ic_guests"
+        android:title="@string/guests"/>
+
+<!--    <item-->
+<!--        android:id="@+id/ai_assistant"-->
+<!--        android:icon="@drawable/ic_ai"-->
+<!--        android:title="@string/ai_assistant"/>-->
+
+    <item
+        android:id="@+id/messages"
+        android:icon="@drawable/ic_messages1"
+        android:title="@string/messages"/>
+
+    <item
+        android:id="@+id/notes"
+        android:icon="@drawable/ic_notes"
+        android:title="@string/notes"/>
+
+</menu>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.marveloushost.betterrank.viewModel.IntroViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSurface">
+
+        <!-- ViewPager -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottomBar" />
+
+        <!-- Bottom Bar -->
+        <LinearLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <!-- Dots -->
+            <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                android:id="@+id/dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:dotsColor="@color/colorPrimary"
+                app:dotsStrokeColor="@color/colorOutline"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="12dp"
+                app:dotsSpacing="4dp"
+                app:dotsStrokeWidth="2dp"
+                app:progressMode="true"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Buttons Row -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Back Button -->
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/img_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/SurfaceButtonCircle"
+                    android:src="@drawable/ic_arrow_left"
+                    android:tint="@color/colorOnSurface"
+                    android:padding="@dimen/default_padding"
+                    android:layout_marginEnd="16dp"
+                    android:visibility="@{viewModel.currentPosition > 0 ? View.VISIBLE : View.VISIBLE, default=visible}"
+                    android:onClick="@{() -> viewModel.previousPage()}" />
+
+                <!-- Forward Button (Pages 0–1) -->
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/btn_forward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/PrimaryButtonCircle"
+                    android:src="@drawable/ic_arrow_right"
+                    android:tint="@color/colorOnPrimary"
+                    android:padding="@dimen/default_padding"
+                    android:layout_marginStart="16dp"
+                    android:visibility="@{viewModel.currentPosition &lt; 2 ? View.VISIBLE : View.GONE, default=visible}"
+                    android:onClick="@{() -> viewModel.nextPage()}" />
+
+                <!-- Start Button (Page 2) -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_start"
+                    style="@style/PrimaryButtonRounded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start"
+                    app:backgroundTint="@null"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="-4dp"
+                    android:visibility="@{viewModel.currentPosition == 2 ? View.VISIBLE : View.GONE, default=gone}"
+                    android:onClick="@{() -> viewModel.nextPage()}" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

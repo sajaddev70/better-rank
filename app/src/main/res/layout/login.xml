@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.marveloushost.betterrank.viewModel.LoginViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_background"
+        android:layoutDirection="ltr">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/margin_top_big"
+            android:id="@+id/li_topBar">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_small_logo"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_start_small">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextLarge"
+                    android:textColor="@color/colorOnSurface"
+                    android:textStyle="bold"
+                    android:text="@string/app_name"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:textColor="@color/colorOnSurface"
+                    android:text="@string/by_marvelous_host"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/li_topBar"
+            app:layout_constraintBottom_toTopOf="@id/btn_google">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="@dimen/margin_end"
+                app:srcCompat="@drawable/ic_login"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_small"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="@dimen/margin_end"
+                style="@style/TextVeryLargeTop"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorOnSurface"
+                android:id="@+id/txt_title"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_small"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="@dimen/margin_end"
+                style="@style/TextSmall"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorOnSurface"
+                android:text="@string/register_login_using_one_of_the_social_networks"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom_very_big"
+            android:paddingStart="@dimen/default_padding_so_small"
+            android:paddingEnd="@dimen/default_padding_so_small"
+            android:text="@string/login_with_google"
+            android:textAlignment="center"
+            app:icon="@drawable/ic_google"
+            app:backgroundTint="@null"
+            app:iconTint="@color/colorOnBackground"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+        app:cornerRadius="8dp"
+        style="@style/TertiaryButtonGradient1"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+        <include
+            layout="@layout/loading"
+            android:id="@+id/baseLoading"
+            android:visibility="@{viewModel.isLoading?View.VISIBLE:View.GONE,default=gone}"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

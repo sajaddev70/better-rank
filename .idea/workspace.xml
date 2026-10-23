@@ -1,0 +1,1624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_background.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_container_background.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_message_bubble.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_photo_selection_overlay.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_roundedwhite.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_selected_item.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_unselected_item.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/border_photo_item.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/border_photo_selected.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/circle_white.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/date_badge_bg.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/door.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/door_front_24px.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/flare_24px.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/full_coverage_24px.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/home_24px.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow_left.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_basic_information_house.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_big_logo.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_city_guide.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_city_guide_big.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_city_guide_info.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_clear.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_close.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_decorative_items.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_delete.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_document.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_edit.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_edit_text.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_focus.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_gallery.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_google.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_google_padded.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_guest_placeholder.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_guests.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_home.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_home_guide.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_home_guide_big.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_house_amenities.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_image.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_kitchen.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_lighting.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_link.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_living_room.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_login.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_messages.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_messages1.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_mic.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_notes.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_notes_colorful.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_notes_colorful_big.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_notification.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_personalized_tips.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_photography_guide.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_photography_guide_small.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_plus.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_plus_mini.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_problem_image.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_reload.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_reminder.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_reviews.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_search.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_searchblack.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_small_logo.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_star_small.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_start.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_tip.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_user.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_yard.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/orange_pill.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/outline_border_circle.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/outline_border_dash.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/outline_white_circle.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/pill_left.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/pill_middle.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/pill_right.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/pill_single.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/primary_background1.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/primary_background2.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/primary_background_circle.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/primary_background_gradient.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/primary_background_gradient2.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/primary_button_gradient.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/primary_container_background1.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/primary_rounded_bottom_gradient.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/register_home.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/rounded_corner.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/row_rounded_bg.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/secondary_container_background1.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/secondary_container_background2.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/segment_background.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/segment_pill.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/selected_overlay.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/surface_background.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/surface_background1.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/surface_background2.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/surface_background3.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/surface_background_circle.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/surface_rounded_bottom.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/tertiary_background1.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/tertiary_background_gradient.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/tertiary_background_gradient2.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/tertiary_button_gradient_1.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/window_24px.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/action_bar.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_add_guest.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_guest.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_instruction_translation.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_messaging.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_photo_section.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_review_analysis.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/ai_analysis.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/ai_assistant.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/base_adapter.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_dialog.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/change_profile_dialog.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/check_home_info_dialog.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/chose_avatar_adapter.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/city_guide.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/city_guide_dialog.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/create_note.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_analyzing.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_image_picker.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_multi_image_picker.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_by_guests.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_calendar.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section1.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section2.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section3.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section4.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section5.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section6.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section7.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section8.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section9.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_messages.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/guest_add_booking_bottomsheet.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/guests.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/home.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/home_guide.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/home_guide_dialog.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/home_register.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/image_adapter.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/include_add_guest_cards.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/intro.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/intro_adapter.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_calendar_day.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_calendar_row.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_date_separator.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_guest_card.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_image_picker.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_message_date.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_message_guest.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_message_summary.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_other_language.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_sent_message.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/loading.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/loading_fullscreen.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/loadingbox.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/loadingbox1.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/loadingbox2.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/login.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/logout_dialog.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/note_adapter.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/notes.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/other_language_input.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/pdf_language_selection.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/photo_home_adapter.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/photo_home_dialog.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/photo_home_download_dialog.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/photo_home_result_dialog.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/photography_guide.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/photography_home.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/popup_dialog.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/problem_image_dialog.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/register.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/reminder_manager_dialog.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/review_adapter.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/reviews.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/select_image_dialog.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/splash.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/translation_progress_box.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/web.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_menu.xml">
+        <config>
+          <theme>@style/Base.Theme</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d49b128-5322-479b-83da-53fd97c649f5" name="Changes" comment="logs trned off" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=R5CY54X73ZR)]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="Class" />
+        <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/key/living_maples_keystore_better_rank.jks" />
+    <option name="KEY_ALIAS" value="better_rank" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="24e70b33909b0a49dc386a852a25992ab7189416" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;navidtahmaasbi&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/navidtahmaasbi/betterrank.git&quot;,
+    &quot;accountId&quot;: &quot;b1cba475-8979-4b77-ae47-6e3e38e7dd0a&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="34N9t63oftE4a4072bOcMnMTYBp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "ApkExportedModule": "BetterRank.app",
+    "BundleExportedModule": "BetterRank.app",
+    "ExportApk.ApkPathForBetterRank.app": "/Users/andrioddeveloper/Desktop",
+    "ExportBundle.BundlePathForBetterRank.app": "C:\\Users\\AkaiQtz\\Desktop\\BetterRank\\app",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "Dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/andrioddeveloper/Downloads/BetterRank/app",
+    "project.structure.last.edited": "Dependencies",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "show.migrate.to.gradle.popup": "false"
+  },
+  "keyToStringList": {
+    "ExportApk.BuildVariants": [
+      "release"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="C:\Users\AkaiQtz\Desktop\BetterRank\app\src\main\res\layout" />
+      <recent name="C:\Users\AkaiQtz\Desktop\BetterRank\app\src\main\assets" />
+      <recent name="C:\Users\AkaiQtz\Desktop\BetterRank\app\src\main\res\drawable" />
+      <recent name="C:\Users\AkaiQtz\Desktop\BetterRank\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/key" />
+      <recent name="C:\Users\AkaiQtz\Desktop\BetterRank\app\src\main\res\drawable" />
+      <recent name="C:\Users\AkaiQtz\Desktop\BetterRank\app\src\main\res\layout" />
+      <recent name="C:\Users\AkaiQtz\Desktop\BetterRank\app\src\main\res\values" />
+      <recent name="C:\Users\AkaiQtz\Desktop\BetterRank\app" />
+    </key>
+    <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
+      <recent name="com.marveloushost.betterrank.guestdataextraction" />
+      <recent name="com.marveloushost.betterrank.ui" />
+      <recent name="com.marveloushost.betterrank.fragment" />
+      <recent name="com.marveloushost.betterrank" />
+      <recent name="com.marveloushost.betterrank.adapter" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="BetterRank.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" IS_LOCATION_SIMULATION_SUPPORTED="false" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" DEVELOPMENT_TEAM="${TEAM_ID}" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d49b128-5322-479b-83da-53fd97c649f5" name="Changes" comment="" />
+      <created>1761043378947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1761043378947</updated>
+    </task>
+    <task id="LOCAL-00094" summary="checkboxes persist">
+      <option name="closed" value="true" />
+      <created>1765115010287</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1765115010288</updated>
+    </task>
+    <task id="LOCAL-00095" summary="dynamic keys">
+      <option name="closed" value="true" />
+      <created>1765123030938</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1765123030938</updated>
+    </task>
+    <task id="LOCAL-00096" summary="restore state worked">
+      <option name="closed" value="true" />
+      <created>1765131801187</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1765131801187</updated>
+    </task>
+    <task id="LOCAL-00097" summary="main images work in pdf">
+      <option name="closed" value="true" />
+      <created>1765139256601</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1765139256601</updated>
+    </task>
+    <task id="LOCAL-00098" summary="section photos get in pdf">
+      <option name="closed" value="true" />
+      <created>1765139889317</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1765139889317</updated>
+    </task>
+    <task id="LOCAL-00099" summary="section photos get in pdf visually fine">
+      <option name="closed" value="true" />
+      <created>1765141480883</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1765141480883</updated>
+    </task>
+    <task id="LOCAL-00100" summary="guide creation every launch">
+      <option name="closed" value="true" />
+      <created>1765145846756</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1765145846756</updated>
+    </task>
+    <task id="LOCAL-00101" summary="pdf progressbars done">
+      <option name="closed" value="true" />
+      <created>1765145972000</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1765145972001</updated>
+    </task>
+    <task id="LOCAL-00102" summary="ml guests not done yet so removed click">
+      <option name="closed" value="true" />
+      <created>1765147970274</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1765147970274</updated>
+    </task>
+    <task id="LOCAL-00103" summary="photohome button show fix">
+      <option name="closed" value="true" />
+      <created>1765148649337</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1765148649337</updated>
+    </task>
+    <task id="LOCAL-00104" summary="fix fix">
+      <option name="closed" value="true" />
+      <created>1765148722490</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1765148722490</updated>
+    </task>
+    <task id="LOCAL-00105" summary="fix fix">
+      <option name="closed" value="true" />
+      <created>1765170419542</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1765170419542</updated>
+    </task>
+    <task id="LOCAL-00106" summary="no guide creation on register">
+      <option name="closed" value="true" />
+      <created>1765209120544</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1765209120544</updated>
+    </task>
+    <task id="LOCAL-00107" summary="city fill i guess">
+      <option name="closed" value="true" />
+      <created>1765215404716</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1765215404716</updated>
+    </task>
+    <task id="LOCAL-00108" summary="back press fix">
+      <option name="closed" value="true" />
+      <created>1765228797878</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1765228797878</updated>
+    </task>
+    <task id="LOCAL-00109" summary="froze fix">
+      <option name="closed" value="true" />
+      <created>1765234606493</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1765234606493</updated>
+    </task>
+    <task id="LOCAL-00110" summary="city filled in homeguide">
+      <option name="closed" value="true" />
+      <created>1765294105061</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1765294105061</updated>
+    </task>
+    <task id="LOCAL-00111" summary="minor ui fix">
+      <option name="closed" value="true" />
+      <created>1765294687277</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1765294687277</updated>
+    </task>
+    <task id="LOCAL-00112" summary="minor ui fix">
+      <option name="closed" value="true" />
+      <created>1765295188443</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1765295188443</updated>
+    </task>
+    <task id="LOCAL-00113" summary="airbnb fetch hard timeout">
+      <option name="closed" value="true" />
+      <created>1765295804341</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1765295804341</updated>
+    </task>
+    <task id="LOCAL-00114" summary="guide null checking">
+      <option name="closed" value="true" />
+      <created>1765298838045</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1765298838045</updated>
+    </task>
+    <task id="LOCAL-00115" summary="homeguide update fixed">
+      <option name="closed" value="true" />
+      <created>1765302328107</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1765302328107</updated>
+    </task>
+    <task id="LOCAL-00116" summary="pdf ui fix">
+      <option name="closed" value="true" />
+      <created>1765308161414</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1765308161414</updated>
+    </task>
+    <task id="LOCAL-00117" summary="pdf ui fix">
+      <option name="closed" value="true" />
+      <created>1765311933366</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1765311933366</updated>
+    </task>
+    <task id="LOCAL-00118" summary="note expansion">
+      <option name="closed" value="true" />
+      <created>1765314290705</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1765314290705</updated>
+    </task>
+    <task id="LOCAL-00119" summary="booking dialog done">
+      <option name="closed" value="true" />
+      <created>1765320742819</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1765320742819</updated>
+    </task>
+    <task id="LOCAL-00120" summary="aaaaaaaa">
+      <option name="closed" value="true" />
+      <created>1765323504972</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1765323504972</updated>
+    </task>
+    <task id="LOCAL-00121" summary="return to intro fixed">
+      <option name="closed" value="true" />
+      <created>1765455977550</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1765455977551</updated>
+    </task>
+    <task id="LOCAL-00122" summary="guide boxes height problem fixed">
+      <option name="closed" value="true" />
+      <created>1765458557974</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1765458557974</updated>
+    </task>
+    <task id="LOCAL-00123" summary="perfect pdf ui">
+      <option name="closed" value="true" />
+      <created>1765462797219</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1765462797221</updated>
+    </task>
+    <task id="LOCAL-00124" summary="dots fixed">
+      <option name="closed" value="true" />
+      <created>1765466692310</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1765466692310</updated>
+    </task>
+    <task id="LOCAL-00125" summary="logout button fixed">
+      <option name="closed" value="true" />
+      <created>1765467552104</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1765467552104</updated>
+    </task>
+    <task id="LOCAL-00126" summary="dots fixed">
+      <option name="closed" value="true" />
+      <created>1765468626231</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1765468626231</updated>
+    </task>
+    <task id="LOCAL-00127" summary="photoguide title fixed">
+      <option name="closed" value="true" />
+      <created>1765469283464</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1765469283464</updated>
+    </task>
+    <task id="LOCAL-00128" summary="photoguide title fixed and  review loading added">
+      <option name="closed" value="true" />
+      <created>1765493243761</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1765493243761</updated>
+    </task>
+    <task id="LOCAL-00129" summary="photosection analysing 30 seconds time out">
+      <option name="closed" value="true" />
+      <created>1765527989127</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1765527989127</updated>
+    </task>
+    <task id="LOCAL-00130" summary="ui fixes and &quot;select date&quot; hints">
+      <option name="closed" value="true" />
+      <created>1765530506123</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1765530506124</updated>
+    </task>
+    <task id="LOCAL-00131" summary="ui fixes and &quot;select date&quot; hints">
+      <option name="closed" value="true" />
+      <created>1765530514647</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1765530514647</updated>
+    </task>
+    <task id="LOCAL-00132" summary="invalid check out">
+      <option name="closed" value="true" />
+      <created>1765532811848</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1765532811848</updated>
+    </task>
+    <task id="LOCAL-00133" summary="permissions fixed">
+      <option name="closed" value="true" />
+      <created>1766142997027</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1766142997028</updated>
+    </task>
+    <task id="LOCAL-00134" summary="add using booking image done">
+      <option name="closed" value="true" />
+      <created>1766175783083</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1766175783083</updated>
+    </task>
+    <task id="LOCAL-00135" summary="minor ui fix">
+      <option name="closed" value="true" />
+      <created>1766176711456</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1766176711456</updated>
+    </task>
+    <task id="LOCAL-00136" summary="minor fix">
+      <option name="closed" value="true" />
+      <created>1766177060299</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1766177060299</updated>
+    </task>
+    <task id="LOCAL-00137" summary="fixes on nationality done">
+      <option name="closed" value="true" />
+      <created>1766179718143</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1766179718143</updated>
+    </task>
+    <task id="LOCAL-00138" summary="loading and error handling done">
+      <option name="closed" value="true" />
+      <created>1766181529420</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1766181529420</updated>
+    </task>
+    <task id="LOCAL-00139" summary="booking done completely">
+      <option name="closed" value="true" />
+      <created>1766181885522</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1766181885522</updated>
+    </task>
+    <task id="LOCAL-00140" summary="ui stuff">
+      <option name="closed" value="true" />
+      <created>1766189926917</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1766189926917</updated>
+    </task>
+    <task id="LOCAL-00141" summary="remote config done">
+      <option name="closed" value="true" />
+      <created>1766190455314</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1766190455314</updated>
+    </task>
+    <task id="LOCAL-00142" summary="logs trned off">
+      <option name="closed" value="true" />
+      <created>1766192328342</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1766192328342</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="homeguide update fixed" />
+    <MESSAGE value="pdf ui fix" />
+    <MESSAGE value="note expansion" />
+    <MESSAGE value="booking dialog done" />
+    <MESSAGE value="aaaaaaaa" />
+    <MESSAGE value="return to intro fixed" />
+    <MESSAGE value="guide boxes height problem fixed" />
+    <MESSAGE value="perfect pdf ui" />
+    <MESSAGE value="logout button fixed" />
+    <MESSAGE value="dots fixed" />
+    <MESSAGE value="photoguide title fixed" />
+    <MESSAGE value="photoguide title fixed and  review loading added" />
+    <MESSAGE value="photosection analysing 30 seconds time out" />
+    <MESSAGE value="ui fixes and &quot;select date&quot; hints" />
+    <MESSAGE value="invalid check out" />
+    <MESSAGE value="permissions fixed" />
+    <MESSAGE value="add using booking image done" />
+    <MESSAGE value="minor ui fix" />
+    <MESSAGE value="minor fix" />
+    <MESSAGE value="fixes on nationality done" />
+    <MESSAGE value="loading and error handling done" />
+    <MESSAGE value="booking done completely" />
+    <MESSAGE value="ui stuff" />
+    <MESSAGE value="remote config done" />
+    <MESSAGE value="logs trned off" />
+    <option name="LAST_COMMIT_MESSAGE" value="logs trned off" />
+  </component>
+  <component name="play_dynamic_filters_status">
+    <option name="appIdToCheckInfo">
+      <map>
+        <entry key="com.marveloushost.betterrank">
+          <value>
+            <CheckInfo lastCheckTimestamp="1766154684598" />
+          </value>
+        </entry>
+        <entry key="com.marveloushost.betterrank.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1766154684600" />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

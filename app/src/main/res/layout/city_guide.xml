@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.marveloushost.betterrank.viewModel.CityGuideViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr">
+
+        <include layout="@layout/action_bar"
+            android:id="@+id/baseActionBar"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/margin_bottom_very_small"
+            app:layout_constraintTop_toBottomOf="@id/baseActionBar"
+            app:layout_constraintBottom_toTopOf="@id/btn_apply">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- City Guide Card (Fixed, untouched) -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:layout_marginEnd="@dimen/margin_end"
+                    app:cardCornerRadius="@dimen/default_radius"
+                    app:contentPadding="@dimen/default_padding"
+                    app:cardElevation="@dimen/default_elevation"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:srcCompat="@drawable/ic_city_guide"
+                            android:id="@+id/img_cityGuide"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/img_cityGuide"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/TextMedium"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorOnSurface"
+                                android:text="@string/city_guide"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/TextSmall"
+                                android:textColor="@color/colorOnSurface"
+                                android:text="@string/travel_tips_local_insights"/>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_top_very_small"
+                                style="@style/TextVerySmall"
+                                android:maxLines="2"
+                                android:textColor="@color/colorOnSurface"
+                                android:text="@string/all_you_need_to_know_to_explore_the_city"/>
+
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Best public transportation options -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start"
+                        android:layout_marginTop="@dimen/margin_start"
+                        style="@style/TextMedium"
+                        android:maxLines="1"
+                        android:textColor="@color/colorOnBackground"
+                        android:text="Best public transportation options"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_very_small"
+                        android:minHeight="@dimen/default_height"
+                        android:minLines="5"
+                        android:gravity="top|start"
+                        android:inputType="textMultiLine"
+                        style="@style/BackgroundContainerEditText1"
+                        android:textColor="@color/colorOnBackgroundContainer"
+                        app:drawableTint="@color/colorOnBackgroundContainer"
+                        android:hint="Enter best public transportation options"
+                        android:text="@={viewModel.resultUpdateCityGuide.bestPublicTransportation}"/>
+                </LinearLayout>
+
+                <!-- General Information and guidance -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start"
+                        style="@style/TextMedium"
+                        android:maxLines="2"
+                        android:textColor="@color/colorOnBackground"
+                        android:text="General Information and guidance on using public transportation within the city"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_very_small"
+                        android:minHeight="@dimen/default_height"
+                        android:inputType="textMultiLine"
+                        android:minLines="5"
+                        android:gravity="top|start"
+                        style="@style/BackgroundContainerEditText1"
+                        android:textColor="@color/colorOnBackgroundContainer"
+                        app:drawableTint="@color/colorOnBackgroundContainer"
+                        android:hint="Enter general transportation guidance"
+                        android:text="@={viewModel.resultUpdateCityGuide.transportationGuidance}"/>
+                </LinearLayout>
+
+                <!-- Approximate transportation costs -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start"
+                        style="@style/TextMedium"
+                        android:maxLines="1"
+                        android:textColor="@color/colorOnBackground"
+                        android:text="Approximate transportation costs"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_very_small"
+                        android:minHeight="@dimen/default_height"
+                        android:inputType="textMultiLine"
+                        android:minLines="5"
+                        android:gravity="top|start"
+                        style="@style/BackgroundContainerEditText1"
+                        android:textColor="@color/colorOnBackgroundContainer"
+                        app:drawableTint="@color/colorOnBackgroundContainer"
+                        android:hint="Enter approximate costs"
+                        android:text="@={viewModel.resultUpdateCityGuide.transportationCosts}"/>
+                </LinearLayout>
+
+                <!-- Typical stores and restaurants' opening hours -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start"
+                        style="@style/TextMedium"
+                        android:maxLines="1"
+                        android:textColor="@color/colorOnBackground"
+                        android:text="Typical stores and restaurants' opening hours"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_very_small"
+                        android:minHeight="@dimen/default_height"
+                        android:inputType="textMultiLine"
+                        android:minLines="5"
+                        android:gravity="top|start"
+                        style="@style/BackgroundContainerEditText1"
+                        android:textColor="@color/colorOnBackgroundContainer"
+                        app:drawableTint="@color/colorOnBackgroundContainer"
+                        android:hint="Enter typical opening hours"
+                        android:text="@={viewModel.resultUpdateCityGuide.typicalStoreHours}"/>
+                </LinearLayout>
+
+                <!-- Useful city apps -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start"
+                        style="@style/TextMedium"
+                        android:maxLines="1"
+                        android:textColor="@color/colorOnBackground"
+                        android:text="Useful city apps"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_very_small"
+                        android:minHeight="@dimen/default_height"
+                        android:inputType="textMultiLine"
+                        android:minLines="5"
+                        android:gravity="top|start"
+                        style="@style/BackgroundContainerEditText1"
+                        android:textColor="@color/colorOnBackgroundContainer"
+                        app:drawableTint="@color/colorOnBackgroundContainer"
+                        android:hint="Enter useful city apps"
+                        android:text="@={viewModel.resultUpdateCityGuide.usefulCityApps}"/>
+                </LinearLayout>
+
+                <!-- Do’s and don’ts in the city -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start"
+                        style="@style/TextMedium"
+                        android:maxLines="1"
+                        android:textColor="@color/colorOnBackground"
+                        android:text="Do’s and don’ts in the city"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_very_small"
+                        android:minHeight="@dimen/default_height"
+                        android:inputType="textMultiLine"
+                        android:minLines="5"
+                        android:gravity="top|start"
+                        style="@style/BackgroundContainerEditText1"
+                        android:textColor="@color/colorOnBackgroundContainer"
+                        app:drawableTint="@color/colorOnBackgroundContainer"
+                        android:hint="Enter do’s and don’ts"
+                        android:text="@={viewModel.resultUpdateCityGuide.dosAndDonts}"/>
+                </LinearLayout>
+
+                <!-- Must-try Local foods and specialties -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start"
+                        style="@style/TextMedium"
+                        android:maxLines="1"
+                        android:textColor="@color/colorOnBackground"
+                        android:text="Must-try Local foods and specialties"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_very_small"
+                        android:minHeight="@dimen/default_height"
+                        android:inputType="textMultiLine"
+                        android:minLines="5"
+                        android:gravity="top|start"
+                        style="@style/BackgroundContainerEditText1"
+                        android:textColor="@color/colorOnBackgroundContainer"
+                        app:drawableTint="@color/colorOnBackgroundContainer"
+                        android:hint="Enter must-try foods"
+                        android:text="@={viewModel.resultUpdateCityGuide.mustTryFoods}"/>
+                </LinearLayout>
+
+                <!-- Recommended restaurants and cafes -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start"
+                        style="@style/TextMedium"
+                        android:maxLines="1"
+                        android:textColor="@color/colorOnBackground"
+                        android:text="Recommended restaurants and cafes"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_very_small"
+                        android:minHeight="@dimen/default_height"
+                        android:inputType="textMultiLine"
+                        android:minLines="5"
+                        android:gravity="top|start"
+                        style="@style/BackgroundContainerEditText1"
+                        android:textColor="@color/colorOnBackgroundContainer"
+                        app:drawableTint="@color/colorOnBackgroundContainer"
+                        android:hint="Enter recommended places"
+                        android:text="@={viewModel.resultUpdateCityGuide.recommendedRestaurants}"/>
+                </LinearLayout>
+
+                <!-- Popular shopping centers and streets for souvenirs -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start"
+                        style="@style/TextMedium"
+                        android:maxLines="1"
+                        android:textColor="@color/colorOnBackground"
+                        android:text="Popular shopping centers and streets for souvenirs"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_very_small"
+                        android:minHeight="@dimen/default_height"
+                        android:inputType="textMultiLine"
+                        android:minLines="5"
+                        android:gravity="top|start"
+                        style="@style/BackgroundContainerEditText1"
+                        android:textColor="@color/colorOnBackgroundContainer"
+                        app:drawableTint="@color/colorOnBackgroundContainer"
+                        android:hint="Enter popular shopping areas"
+                        android:text="@={viewModel.resultUpdateCityGuide.popularShopping}"/>
+                </LinearLayout>
+
+                <!-- Top places to visit -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start"
+                        style="@style/TextMedium"
+                        android:maxLines="1"
+                        android:textColor="@color/colorOnBackground"
+                        android:text="Top places to visit"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_very_small"
+                        android:minHeight="@dimen/default_height"
+                        android:inputType="textMultiLine"
+                        android:minLines="5"
+                        android:gravity="top|start"
+                        style="@style/BackgroundContainerEditText1"
+                        android:textColor="@color/colorOnBackgroundContainer"
+                        app:drawableTint="@color/colorOnBackgroundContainer"
+                        android:hint="Enter top places"
+                        android:text="@={viewModel.resultUpdateCityGuide.topPlacesToVisit}"/>
+                </LinearLayout>
+
+                <!-- Important tips to visitors -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start"
+                        style="@style/TextMedium"
+                        android:maxLines="1"
+                        android:textColor="@color/colorOnBackground"
+                        android:text="Important tips to visitors"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_very_small"
+                        android:minHeight="@dimen/default_height"
+                        android:inputType="textMultiLine"
+                        android:minLines="5"
+                        android:gravity="top|start"
+                        style="@style/BackgroundContainerEditText1"
+                        android:textColor="@color/colorOnBackgroundContainer"
+                        app:drawableTint="@color/colorOnBackgroundContainer"
+                        android:hint="Enter important tips"
+                        android:text="@={viewModel.resultUpdateCityGuide.importantTips}"/>
+                </LinearLayout>
+
+                <!-- Your personal recommendations -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start"
+                        style="@style/TextMedium"
+                        android:maxLines="1"
+                        android:textColor="@color/colorOnBackground"
+                        android:text="Your personal recommendations"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_very_small"
+                        android:minHeight="@dimen/default_height"
+                        android:inputType="textMultiLine"
+                        android:minLines="5"
+                        android:gravity="top|start"
+                        android:paddingTop="@dimen/default_padding_so_small"
+                        style="@style/BackgroundContainerEditText1"
+                        android:textColor="@color/colorOnBackgroundContainer"
+                        app:drawableTint="@color/colorOnBackgroundContainer"
+                        android:hint="Enter your personal recommendations"
+                        android:text="@={viewModel.resultUpdateCityGuide.personalRecommendations}"/>
+                </LinearLayout>
+
+                <!-- Unique local experiences -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start"
+                        style="@style/TextMedium"
+                        android:maxLines="1"
+                        android:textColor="@color/colorOnBackground"
+                        android:text="Unique local experiences"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_very_small"
+                        android:minHeight="@dimen/default_height"
+                        android:inputType="textMultiLine"
+                        android:minLines="5"
+                        android:gravity="top|start"
+                        android:paddingTop="@dimen/default_padding_so_small"
+                        style="@style/BackgroundContainerEditText1"
+                        android:textColor="@color/colorOnBackgroundContainer"
+                        app:drawableTint="@color/colorOnBackgroundContainer"
+                        android:hint="Enter unique experiences"
+                        android:text="@={viewModel.resultUpdateCityGuide.uniqueExperiences}"/>
+                </LinearLayout>
+
+                <!-- Safety and emergency tips -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_top">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start"
+                        style="@style/TextMedium"
+                        android:maxLines="1"
+                        android:textColor="@color/colorOnBackground"
+                        android:text="Safety and emergency tips"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_very_small"
+                        android:minHeight="@dimen/default_height"
+                        android:inputType="textMultiLine"
+                        android:minLines="5"
+                        android:gravity="top|start"
+                        style="@style/BackgroundContainerEditText1"
+                        android:textColor="@color/colorOnBackgroundContainer"
+                        app:drawableTint="@color/colorOnBackgroundContainer"
+                        android:hint="Enter safety and emergency tips"
+                        android:text="@={viewModel.resultUpdateCityGuide.safetyEmergencyTips}"/>
+                </LinearLayout>
+
+<!--                &lt;!&ndash; Personalized Local Tips Card (Fixed, untouched) &ndash;&gt;-->
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="@dimen/margin_start"-->
+<!--                    android:layout_marginEnd="@dimen/margin_end"-->
+<!--                    app:cardCornerRadius="@dimen/default_radius"-->
+<!--                    app:contentPadding="@dimen/default_padding_small"-->
+<!--                    app:cardElevation="@dimen/default_elevation"-->
+<!--                    android:layout_marginBottom="@dimen/margin_bottom"-->
+<!--                    android:layout_marginTop="@dimen/margin_top">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:layout_marginTop="@dimen/margin_top_big">-->
+
+<!--                            <androidx.appcompat.widget.AppCompatImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:srcCompat="@drawable/ic_personalized_tips"-->
+<!--                                app:tint="@color/colorOnPrimary"-->
+<!--                                android:padding="@dimen/default_padding_small"-->
+<!--                                android:background="@drawable/primary_background_gradient2"/>-->
+
+<!--                            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                style="@style/TextMedium"-->
+<!--                                android:textStyle="bold"-->
+<!--                                android:maxLines="1"-->
+<!--                                android:layout_marginStart="@dimen/margin_start_so_small"-->
+<!--                                android:textColor="@color/colorOnBackground"-->
+<!--                                android:text="@string/personalized_local_tips"/>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_marginTop="@dimen/margin_top">-->
+
+<!--                            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                style="@style/TextMedium"-->
+<!--                                android:maxLines="1"-->
+<!--                                android:textColor="@color/colorOnBackground"-->
+<!--                                android:text="@string/your_personal_recommendations"/>-->
+
+<!--                            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginTop="@dimen/margin_top_very_small"-->
+<!--                                android:minHeight="@dimen/default_height"-->
+<!--                                android:inputType="textMultiLine"-->
+<!--                                android:minLines="2"-->
+<!--                                android:gravity="top|start"-->
+<!--                                android:paddingTop="@dimen/default_padding_so_small"-->
+<!--                                style="@style/BackgroundContainerEditText2"-->
+<!--                                android:textColor="@color/colorOnBackgroundContainer"-->
+<!--                                app:drawableTint="@color/colorOnBackgroundContainer"-->
+<!--                                android:hint="@string/your_personal_recommendations_hint"-->
+<!--                                android:text="@={viewModel.resultUpdateCityGuide.personalRecommendations}"/>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_marginTop="@dimen/margin_top">-->
+
+<!--                            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                style="@style/TextMedium"-->
+<!--                                android:maxLines="1"-->
+<!--                                android:textColor="@color/colorOnBackground"-->
+<!--                                android:text="@string/unique_local_experiences"/>-->
+
+<!--                            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginTop="@dimen/margin_top_very_small"-->
+<!--                                android:minHeight="@dimen/default_height"-->
+<!--                                android:inputType="textMultiLine"-->
+<!--                                android:minLines="2"-->
+<!--                                android:gravity="top|start"-->
+<!--                                android:paddingTop="@dimen/default_padding_so_small"-->
+<!--                                style="@style/BackgroundContainerEditText2"-->
+<!--                                android:textColor="@color/colorOnBackgroundContainer"-->
+<!--                                app:drawableTint="@color/colorOnBackgroundContainer"-->
+<!--                                android:hint="@string/unique_local_experiences_hint"-->
+<!--                                android:text="@={viewModel.resultUpdateCityGuide.uniqueExperiences}"/>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_marginTop="@dimen/margin_top">-->
+
+<!--                            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                style="@style/TextMedium"-->
+<!--                                android:maxLines="1"-->
+<!--                                android:textColor="@color/colorOnBackground"-->
+<!--                                android:text="@string/useful_maps_or_links"/>-->
+
+<!--                            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="@dimen/default_height"-->
+<!--                                android:inputType="text"-->
+<!--                                android:maxLines="1"-->
+<!--                                android:layout_marginTop="@dimen/margin_top_very_small"-->
+<!--                                style="@style/BackgroundContainerEditText2"-->
+<!--                                android:textColor="@color/colorOnBackgroundContainer"-->
+<!--                                android:drawableStart="@drawable/ic_link"-->
+<!--                                app:drawableTint="@color/colorOnBackgroundContainer"-->
+<!--                                android:hint="@string/useful_maps_or_links_hint"-->
+<!--                                android:text="@={viewModel.resultUpdateCityGuide.usefulLinks}"/>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:layout_marginTop="@dimen/margin_top"-->
+<!--                            android:layout_marginBottom="@dimen/margin_bottom_big"-->
+<!--                            android:gravity="center"-->
+<!--                            android:padding="@dimen/default_padding_small"-->
+<!--                            android:background="@drawable/outline_border_dash">-->
+
+<!--                            <androidx.appcompat.widget.AppCompatImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:tint="@color/colorOnSurface"-->
+<!--                                app:srcCompat="@drawable/ic_image"/>-->
+
+<!--                            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginTop="@dimen/margin_top_small"-->
+<!--                                style="@style/TextMedium"-->
+<!--                                android:maxLines="1"-->
+<!--                                android:textColor="@color/colorOnSurface"-->
+<!--                                android:text="@string/optional_photos_of_the_city_or_local_highlights"/>-->
+
+<!--                            <androidx.appcompat.widget.AppCompatButton-->
+<!--                                android:layout_width="@dimen/default_width"-->
+<!--                                android:layout_height="@dimen/default_height_small"-->
+<!--                                android:layout_marginTop="@dimen/margin_top"-->
+<!--                                style="@style/PrimaryButtonGradient2"-->
+<!--                                android:drawableStart="@drawable/ic_plus_mini"-->
+<!--                                android:paddingStart="@dimen/default_padding_so_small"-->
+<!--                                android:paddingEnd="@dimen/default_padding_so_small"-->
+<!--                                android:text="@string/upload"-->
+<!--                                android:enabled="@{!viewModel.isLoading}"-->
+<!--                                android:id="@+id/btn_upload"/>-->
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <!-- Confirm Button (Fixed, untouched) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            style="@style/PrimaryButtonGradient"
+            android:drawableTint="@color/colorOnBackground"
+            android:text="Done"
+            android:enabled="@{!viewModel.isLoading}"
+            android:id="@+id/btn_apply"/>
+
+        <include
+            layout="@layout/loading"
+            android:id="@+id/baseLoading"
+            android:visibility="@{viewModel.isLoading?View.VISIBLE:View.GONE,default=gone}"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

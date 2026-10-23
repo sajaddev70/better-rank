@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="960"
+    android:viewportHeight="960">
+
+  <!-- Bottom edge (fully opaque) -->
+  <path
+      android:fillColor="#00000000"
+      android:pathData="M120,840L840,840"
+      android:strokeColor="@android:color/white"
+      android:strokeWidth="80" />
+
+  <!-- Left, right, and top sides (alpha 0.5) — TOP LINE NOW MATCHES ORIGINAL DOOR WIDTH -->
+  <path
+      android:fillColor="#00000000"
+      android:pathData="M200,760L200,200Q200,160 230,130Q260,120 280,120L680,120Q700,120 730,130Q760,160 760,200L760,760"
+      android:strokeAlpha="0.5"
+      android:strokeColor="@android:color/white"
+      android:strokeWidth="80"
+      android:strokeLineJoin="round" />
+
+  <!-- Doorknob (solid) -->
+  <path
+      android:fillColor="@android:color/white"
+      android:pathData="M560,520Q577,520 588.5,508.5Q600,497 600,480Q600,463 588.5,451.5Q577,440 560,440Q543,440 531.5,451.5Q520,463 520,480Q520,497 531.5,508.5Q543,520 560,520Z" />
+
+</vector>

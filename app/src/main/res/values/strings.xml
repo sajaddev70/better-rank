@@ -1,0 +1,231 @@
+<resources>
+    <string name="app_name">Better Rank</string>
+    <string name="home">Home</string>
+    <string name="guests">Guests</string>
+    <string name="ai_assistant">Airbnb Page Analysis</string>
+    <string name="messages">Messages</string>
+    <string name="notes">Notes</string>
+    <string name="default_web_client_id" translatable="false">177065056600-o61i7kv9efabfdr6s9s909iaeicvqg5t.apps.googleusercontent.com</string>
+    <string name="select_language">Select Language</string>
+    <string name="intro_title1">
+        <![CDATA[
+        <font color="#f85620">Earn More</font> <font color="#1f2835">From Every Booking</font>
+        ]]>
+    </string>
+    <string name="intro_subtitle1">Optimize your Airbnb listings, boost your ratings, and get more reservations</string>
+    <string name="intro_title2">
+        <![CDATA[
+        <font color="#1f2835">Your Smart</font> <font color="#f85620">Hosting Companion</font>
+        ]]>
+    </string>
+    <string name="intro_subtitle2">An AI-powered assistant to manage and upgrade your short-term rentals</string>
+    <string name="intro_title3">
+        <![CDATA[
+        <font color="#f85620">Increase Your Points</font> <font color="#1f2835">And Grades With Us</font>
+        ]]>
+    </string>
+    <string name="intro_subtitle3">From home setup to guest communication — Better Rank handles it all</string>
+    <string name="start">Start</string>
+    <string name="next">Next</string>
+    <string name="by_marvelous_host">by Marvelous Host</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_register">
+        <![CDATA[
+        <font color="#f85620">Login Or Register</font> <font color="#1f2835">In The Lett Application</font>
+        ]]>
+    </string>
+    <string name="register_login_using_one_of_the_social_networks">Register/Login using one of the social networks in the One-Click Login format</string>
+    <string name="login">Log in</string>
+    <string name="register">Register</string>
+    <string name="let_s_get_started">Let’s Get Started</string>
+    <string name="your_profile_sync">Your profile sync with google</string>
+    <string name="change_profile">Change Profile</string>
+    <string name="your_can_choose_avatar">Your can choose avatar or upload from your Device</string>
+    <string name="your_can_choose_picture">Your can take photo or choose picture from your Device</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="chose_picture">Choose Picture</string>
+    <string name="registering_home_information">
+        <![CDATA[
+        <font color="#1f2835">Registering</font> <font color="#f85620">Home Information</font>
+        ]]>
+    </string>
+
+    <string name="there_is_a_problem">
+        <![CDATA[
+        <font color="#1f2835">There is a </font> <font color="#f85620">problem</font> <font color="#1f2835">with the uploaded image</font>
+        ]]>
+    </string>
+
+    <string name="to_register_information_you_can_either_upload_a_photo">To register information, you can either upload a photo of the house or provide a link to it.</string>
+    <string name="check_house">Check House</string>
+    <string name="or">Or</string>
+    <string name="upload_a_photo_of_property_page">Upload a photo of property page ( e.g.,Airbnb)</string>
+    <string name="upload">Upload</string>
+    <string name="camera_permission_is_needed">Camera permission is needed to use this feature</string>
+    <string name="name_invalid">Please enter a valid Name</string>
+    <string name="url_invalid">Please enter a valid URL</string>
+    <string name="check_house_information">Check House Information</string>
+    <string name="to_register_information_you_can_either">To register information, you can either upload a photo of the house or provide a link to it.</string>
+    <string name="fetching_details_it_could_take_around_1_minute">Fetching details, it could take around 1 minute</string>
+    <string name="add_hose">Add Hose</string>
+    <string name="to_register_information_you_can_either_upload">To register information, you can either upload a photo of the house or provide a link to it.</string>
+    <string name="try_again">Try Again</string>
+
+    <!-- General -->
+    <string name="login_error">Login failed. Please try again.</string>
+    <string name="invalid_request">Invalid login request.</string>
+    <string name="unknown_error">An unknown error occurred. Please try again later.</string>
+
+    <!-- Token related -->
+    <string name="token_error">Failed to parse Google ID token.</string>
+    <string name="token_invalid">Invalid token data received.</string>
+    <string name="token_missing">Google ID token is missing.</string>
+
+    <!-- Network / server -->
+    <string name="network_error">Network error. Please check your internet connection.</string>
+    <string name="server_error">Server error. Please try again later.</string>
+
+    <!-- Credentials -->
+    <string name="no_account">No Google account found on this device.</string>
+    <string name="login_cancelled">Login was cancelled by the user.</string>
+    <string name="login_interrupted">Login process was interrupted.</string>
+    <string name="provider_config_error">Google sign-in provider is not configured correctly.</string>
+    <string name="city_guide">City Guide</string>
+    <string name="travel_tips_local_insights">Travel Tips &amp; Local Insights</string>
+    <string name="everything_about_the_property">Everything About The Property</string>
+    <string name="create_city_guide">Create City Guide</string>
+    <string name="artificial_intelligence_at_your_service">Artificial intelligence at your service</string>
+    <string name="reviews">Reviews</string>
+    <string name="PDF">PDF</string>
+    <string name="update">Update</string>
+    <string name="wellcome_guide">
+        <![CDATA[
+        <font color="#ffffff">Easy Guest </font> <font color="#ffffff"><b>Welcome Guide</b></font> <font color="#ffffff"> Creation</font>
+        ]]>
+    </string>
+    <string name="create_your_guide">Create Your Guide</string>
+    <string name="create_home_guide">Create Home Guide</string>
+    <string name="photography">Photography</string>
+    <string name="pdf_guide">PDF Guide For Guests</string>
+    <string name="all_you_need_to_know_to_explore_the_city">All you need to know to explore the city like a local</string>
+    <string name="all_you_need_to_know_to_explore_the_home">All you need to know to explore the home like a local</string>
+    <string name="home_guide">Home Guide</string>
+    <string name="home_guide_created">Home guide created</string>
+    <string name="go_home_page">Go Home Page</string>
+    <string name="download_pdf">Download PDF</string>
+    <string name="city_guide_created">City Guide Created</string>
+    <string name="city_guide_info">City Guide Info (General By Ai)</string>
+    <string name="city_or_area_name">City or Area Name</string>
+    <string name="city_or_area_name_hint">e.g., Rome, Paris, Downtown LA</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="zip_code_hint">Enter Zip Code</string>
+    <string name="best_public_transportation">Best Public Transportation Options</string>
+    <string name="best_public_transportation_hint">e.g Metro, Bus lines 64</string>
+    <string name="typical_store_and_restaurant_opening_hours">Typical Store and Restaurant Opening Hours</string>
+    <string name="typical_store_and_restaurant_opening_hours_hint">e.g., Most shops open from 10 AM to 8 PM</string>
+    <string name="top_places_to_visit">Top Places to Visit</string>
+    <string name="top_places_to_visit_hint">Tourist attractions, historical sites, museums, etc.</string>
+    <string name="must_try_local_foods_and_drinks">Must-Try Local Foods and Drinks</string>
+    <string name="must_try_local_foods_and_drinks_hint">e.g., Traditional dishes, desserts, local beverages</string>
+    <string name="recommended_restaurants_and_caf_s">Recommended Restaurants and Cafés</string>
+    <string name="recommended_restaurants_and_caf_s_hint">Personal favorites or highly-rated spots</string>
+    <string name="important_tips_for_visitors">Important Tips for Visitors</string>
+    <string name="important_tips_for_visitors_hint">Cultural customs, safety advice, tipping etiquette, etc</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="emergency_contacts_hint">Police, ambulance, hospital, 24-hour pharmacy numbers</string>
+    <string name="personalized_local_tips">Personalized Local Tips (Optional)</string>
+    <string name="your_personal_recommendations">Your Personal Recommendations</string>
+    <string name="your_personal_recommendations_hint">Hidden gems, favorite spots, best sunset views, etc</string>
+    <string name="unique_local_experiences">Unique Local Experiences</string>
+    <string name="unique_local_experiences_hint">Bike trails, weekly local events, secret parks, etc</string>
+    <string name="useful_maps_or_links">Useful Maps or Links</string>
+    <string name="useful_maps_or_links_hint">Google Maps links, restaurant websites…</string>
+    <string name="optional_photos_of_the_city_or_local_highlights">Optional Photos of the City or Local Highlights</string>
+    <string name="confirm_and_save">Confirm and save</string>
+    <string name="basic_information_about_the_house">Basic Information about the House</string>
+    <string name="access_to_the_house">Access to the House</string>
+    <string name="house_amenities_information">House Amenities Information</string>
+    <string name="house_address_google_map_link">House Location (Google Map Link)</string>
+    <string name="brief_description_of_the_house">Brief Description of the House</string>
+    <string name="how_to_reach_the_house">How to Reach the House</string>
+    <string name="how_to_find_a_house">How to Find the house</string>
+    <string name="entrance_code">Entrance Code</string>
+    <string name="wifi_password">WiFi Password</string>
+    <string name="additional_accesses">Additional Accesses</string>
+    <string name="select_image">Select Image</string>
+    <string name="that_s_it">Add this house !</string>
+    <string name="please_wait_it_will_take_about_a_minute">Please wait. It will take about a minute.</string>
+    <string name="retrieve_from_airbnb">Retrieve from Airbnb</string>
+    <string name="to_register_your_property_you_can_either_enter_its_airbnb">To register your property, you can either enter its Airbnb URL or take a Picture of the URL on the page</string>
+    <string name="property_name">Property Name</string>
+    <string name="airbnb_link_url">Airbnb link URL</string>
+    <string name="logout_or_delete_account">Logout or Delete Account</string>
+    <string name="logout">Logout</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="preview">Preview</string>
+    <string name="share_pdf">Share PDF</string>
+    <string name="pdf_preview">PDF Preview</string>
+    <string name="how_to_take_high_quality_and_attractive_photos">How to Take High-Quality and Attractive Photos of Your Home</string>
+    <string name="basic_photography_guide_for_your_home">Basic Photography Guide for Your Home</string>
+    <string name="in_this_section_you_ll_find_tips_and_guidance">In this section, you\'ll find tips and guidance on how to take suitable photos of your home. These photos help in presenting your space better</string>
+    <string name="photography_steps">Photography Steps</string>
+    <string name="lighting">1-Lighting</string>
+    <string name="make_sure_the_rooms_are_well_lit">Make sure the rooms are well-lit. Natural light is the best option.</string>
+    <string name="capture_all_important_details_like">Capture all important details like decoration, open spaces, and house amenities to attract guests\' attention</string>
+    <string name="focus_on_details">3-Focus on Details</string>
+    <string name="take_photos_from_corners_and_wide_angle">Take photos from corners and wide-angle views to make the home appear larger and More Open.</string>
+    <string name="proper_angle">2-Proper Angle</string>
+    <string name="additional_tips">Additional Tips</string>
+    <string name="your_photos_should_look_natural_and_authentic">Your photos should look natural and authentic</string>
+    <string name="keep_the_camera_steady_and_level">Keep the camera steady and level</string>
+    <string name="ensure_the_space_is_tidy_and_well_arranged">Ensure the space is tidy and well-arranged</string>
+    <string name="start_photography">Start Photography</string>
+    <string name="after_reading_these_tips_you_can_proceed_by_clicking_the_start_photography">After reading these tips, you can proceed by clicking the Start Photography button to move on to the next steps.</string>
+    <string name="start_now">Start Now</string>
+    <string name="photography_guide">Photography Guide</string>
+    <string name="photography_home">Photography Home</string>
+    <string name="home_photography">Home Photography</string>
+    <string name="how_to_take_high_quality_and_attractive">We help you to take or pick the best pictures.</string>
+    <string name="select_the_imaging_area">Select The Imaging Area</string>
+    <string name="living_room">Living Room</string>
+    <string name="pdf_guide_intro">Create a comprehensive guide for your guests.</string>
+    <string name="not_done">Not Done</string>
+    <string name="create_pdf_guide">Create PDF Guide</string>
+    <string name="approved">Approved</string>
+    <string name="bedrooms">Bedrooms</string>
+    <string name="bathroom">Bathroom</string>
+    <string name="decorative_items">Decorative Items</string>
+    <string name="yard_and_balcony">Yard and Balcony</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="start_shooting_from_scratch">Start Shooting From Scratch</string>
+    <string name="reminded">Reminded</string>
+    <string name="start_at">startAt</string>
+    <string name="you_have_not_note_yet">You have not Note Yet</string>
+    <string name="all_you_need_to_know_to_explore">All you need to know to explore the city like a local</string>
+    <string name="create_new_note">Create new Note</string>
+    <string name="what_is_note">What Is Note ?</string>
+    <string name="note_name">Note Name</string>
+    <string name="enter_note_name">Enter Note Name</string>
+    <string name="do_you_want_to_be_reminded">Do you like to be reminded?</string>
+    <string name="create_now">Create Now</string>
+    <string name="create_note">Create Note</string>
+    <string name="title_invalid">Please enter a valid Title</string>
+    <string name="start_at_invalid">Please select StartAt time</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="took_my_aligner_off_at">Took my Aligner off at</string>
+    <string name="type_a_message">Type a Message.....</string>
+    <string name="your_image_had_no_problems_and_was_approved">Your image had no problems and was approved by intelligent intelligence.</string>
+    <string name="check_your_network_connection">Check your network connection!</string>
+    <string name="download">Download</string>
+    <string name="download_images">Download / Share Images</string>
+    <string name="photography_home_images">Photography Home Images</string>
+    <string name="add_more">Add more</string>
+    <string name="replace">Replace</string>
+    <string name="begin">Begin</string>
+    <string name="back">Back</string>
+    <string name="select_one">Select One</string>
+    <string name="prev_arrow"><![CDATA[<]]></string>
+    <string name="approved_with_count">Approved (%1$d)</string>
+    <string name="select_all">select all</string>
+
+</resources>

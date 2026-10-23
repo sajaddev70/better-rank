@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.marveloushost.betterrank.viewModel.GuestsViewModel" />
+    </data>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Add Guests Manually -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAddManual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:background="@drawable/primary_background_gradient2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Guests Manually"
+                android:paddingStart="20dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddManual"
+                style="@style/TertiaryButtonGradient1"
+                android:layout_width="@dimen/default_width"
+                android:layout_height="@dimen/default_height_small"
+                android:layout_marginTop="10dp"
+                android:text="Add Now"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                android:onClick="@{() -> viewModel.openAddGuestScreen()}"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Add Using Booking Image -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAddBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:paddingStart="20dp"
+            android:background="@drawable/tertiary_background_gradient2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Using Booking Image"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddBooking"
+                android:layout_width="@dimen/default_width"
+                android:layout_height="@dimen/default_height_small"
+                android:layout_marginTop="10dp"
+                style="@style/PrimaryButtonGradient2"
+                android:text="Add Now"
+                android:textColor="@color/white"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+    </layout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="viewModel" type="com.marveloushost.betterrank.viewModel.HomeGuideViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="@color/colorOnPrimary"
+                    app:srcCompat="@drawable/ic_house_amenities"
+                    android:padding="@dimen/default_padding_small"
+                    android:background="@drawable/primary_background_gradient2"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"
+                    android:text="Facilities and Amenities"/>
+            </LinearLayout>
+
+            <!-- Facilities -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginTop="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Facilities"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                style="@style/BackgroundContainerEditText1"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="5"
+                android:gravity="top|start"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.facilities}" />
+
+            <!-- Amenities -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Amenities"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                style="@style/BackgroundContainerEditText1"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="5"
+                android:gravity="top|start"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.amenities}" />
+
+            <!-- First-aid kit & fire extinguisher -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="First-aid kit &amp; fire extinguisher"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minLines="5"
+                android:gravity="top|start"
+                style="@style/BackgroundContainerEditText1"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.firstAid}" />
+
+            <!-- Waste sorting -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Waste sorting &amp; collection schedule"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                style="@style/BackgroundContainerEditText1"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="5"
+                android:gravity="top|start"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.wasteSorting}" />
+
+            <!-- Extra linens -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Extra linens &amp; pillows/blankets"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minLines="5"
+                android:gravity="top|start"
+                style="@style/BackgroundContainerEditText1"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.extraLinens}" />
+
+            <!-- Towels -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Towels &amp; consumables"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minLines="5"
+                android:gravity="top|start"
+                style="@style/BackgroundContainerEditText1"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.towels}" />
+
+            <!-- Cleaning tools -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Cleaning tools &amp; supplies"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minLines="5"
+                android:gravity="top|start"
+                style="@style/BackgroundContainerEditText1"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.cleaningTools}" />
+
+            <!-- Hair dryer, iron -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Hair dryer, iron &amp; ironing board"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minLines="5"
+                android:gravity="top|start"
+                style="@style/BackgroundContainerEditText1"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.hairDryer}" />
+
+            <!-- Portable AC/fans -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Portable AC/fans/heaters/humidifier"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minLines="5"
+                android:gravity="top|start"
+                style="@style/BackgroundContainerEditText1"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.acFans}" />
+
+            <!-- Washer & dryer -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Washer &amp; dryer"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minLines="5"
+                android:gravity="top|start"
+                style="@style/BackgroundContainerEditText1"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.washerDryer}" />
+
+            <!-- Kettle & coffee maker -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Kettle &amp; coffee maker"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minLines="5"
+                android:gravity="top|start"
+                style="@style/BackgroundContainerEditText1"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.kettleCoffee}" />
+
+            <!-- BBQ / Fireplace -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="BBQ / Fireplace (indoor/outdoor)"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minLines="5"
+                android:gravity="top|start"
+                style="@style/BackgroundContainerEditText1"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.bbqFireplace}" />
+
+            <!-- Hot water system -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Hot water system notes"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minLines="5"
+                android:gravity="top|start"
+                style="@style/BackgroundContainerEditText1"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.hotWater}" />
+
+            <!-- Fire escape -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Fire escape route &amp; muster point"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minLines="5"
+                android:gravity="top|start"
+                style="@style/BackgroundContainerEditText1"
+                android:inputType="textMultiLine|textCapSentences"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.fireEscape}" />
+
+            <!-- Nearest hospital -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Nearest hospital/urgent care"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="5"
+                android:gravity="top|start"
+                style="@style/BackgroundContainerEditText1"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.nearestHospital}" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

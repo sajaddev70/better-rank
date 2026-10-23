@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "338085658060",
+    "project_id": "better-rank-fbcec",
+    "storage_bucket": "better-rank-fbcec.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338085658060:android:b2e8ee357f244f259a7169",
+        "android_client_info": {
+          "package_name": "com.marvelous.betterrank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338085658060-ijnfmtfqsctaa6m5kvm68b844oog8dcs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marvelous.betterrank",
+            "certificate_hash": "80bd85991551dae8a9824cb6365b3d637cd1aae7"
+          }
+        },
+        {
+          "client_id": "338085658060-rliri5ep41hvthu95n12c398gsiq2b5r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marvelous.betterrank",
+            "certificate_hash": "259148cda54580fe00158a5cd63bfef6545b07c9"
+          }
+        },
+        {
+          "client_id": "338085658060-hl48k7udl8lm89hjpb4uhd6ilv1p7a5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgwLrnWb3hLsrS-fHFRqzGCVWKedNRBHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338085658060-hl48k7udl8lm89hjpb4uhd6ilv1p7a5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

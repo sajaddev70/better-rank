@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="home"
+            type="com.marveloushost.betterrank.model.AirBnbResponseModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layoutDirection="ltr">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginStart="@dimen/margin_start"
+            android:padding="@dimen/default_padding_small"
+            android:background="@drawable/outline_border_circle"
+            app:srcCompat="@drawable/ic_close"
+            android:tint="@color/colorOnSurface"
+            android:id="@+id/img_close" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_top"
+            style="@style/TextVeryLarge"
+            android:textColor="@color/colorOnSurface"
+            android:text="@string/check_house_information" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/margin_top_small"
+            style="@style/TextMedium"
+            android:textColor="@color/colorOnSurface"
+            android:text="@string/to_register_information_you_can_either" />
+        
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginEnd="@dimen/margin_end"
+            android:layout_marginTop="@dimen/margin_top_big"
+            app:riv_corner_radius="@dimen/default_radius"
+            android:elevation="@dimen/default_elevation"
+            imageLoadByUrl="@{home.image}"
+            android:id="@+id/img_image"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_small">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/txt_rate"
+                android:layout_marginEnd="@dimen/margin_end_so_small"
+                android:layout_marginStart="@dimen/margin_start"
+                android:textStyle="bold"
+                style="@style/TextMedium"
+                android:textColor="@color/colorOnSurface"
+                android:text="@{home.listingName}"
+                android:id="@+id/txt_listingName"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt_listingName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/txt_rate"
+                android:layout_marginEnd="@dimen/margin_end_so_small"
+                android:layout_marginStart="@dimen/margin_start"
+                android:textStyle="bold"
+                style="@style/TextSmall"
+                android:textColor="@color/colorOnSurface"
+                android:text="@{home.detailsText}"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin_end"
+                style="@style/TextSmall"
+                android:textColor="@color/colorOnSurface"
+                android:drawableEnd="@drawable/ic_star_small"
+                android:drawablePadding="@dimen/default_padding_so_small"
+                android:text="@{home.ratings+``}"
+                android:id="@+id/txt_rate"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/margin_top_big"
+            style="@style/PrimaryButtonGradient"
+            android:drawableTint="@color/colorOnBackground"
+            android:text="@string/that_s_it"
+            android:id="@+id/btn_addHome"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.marveloushost.betterrank.viewModel.BaseViewModel" />
+        <variable
+            name="note"
+            type="com.marveloushost.betterrank.model.NoteModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginEnd="@dimen/margin_end"
+        app:cardCornerRadius="@dimen/default_radius"
+        app:cardElevation="@dimen/default_elevation"
+        android:layout_marginTop="@dimen/margin_top_small"
+        android:layout_marginBottom="@dimen/margin_bottom_very_small">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/default_padding_so_small">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/img_delete"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/li_title">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    style="@style/PrimaryButtonGradient2"
+                    android:layout_marginTop="@dimen/margin_top_small"
+                    android:layout_marginStart="@dimen/margin_start_very_small"
+                    android:layout_marginBottom="@dimen/margin_bottom_small"
+                    android:scaleType="centerCrop"
+                    android:padding="@dimen/default_padding_very_small"
+                    app:srcCompat="@drawable/ic_notes_colorful"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:layout_marginStart="@dimen/margin_start_so_small"
+                    android:maxLines="2"
+                    android:text="@{note.title}"
+                    android:textColor="@color/colorOnSurface"/>
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/li_title"
+                app:layout_constraintBottom_toBottomOf="@id/li_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/margin_end_very_small"
+                android:src="@drawable/ic_edit_text"
+                android:padding="@dimen/default_padding_very_small"
+                style="@style/PrimaryButtonGradient2"
+                android:id="@+id/img_edit"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/li_title"
+                app:layout_constraintBottom_toBottomOf="@id/li_title"
+                app:layout_constraintEnd_toStartOf="@id/img_edit"
+                android:layout_marginEnd="@dimen/margin_end_so_small"
+                android:src="@drawable/ic_delete"
+                style="@style/TertiaryButtonGradient2"
+                android:padding="@dimen/default_padding_very_small"
+                android:id="@+id/img_delete"/>
+
+            <LinearLayout
+                android:id="@+id/li_reminded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/li_title"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/margin_start_very_small"
+                android:layout_marginEnd="@dimen/margin_end_very_small"
+                android:layout_marginTop="@dimen/margin_top_very_small"
+                android:layout_marginBottom="@dimen/margin_bottom_small">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextSmall"
+                    android:textStyle="bold"
+                    android:text="@string/reminded"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_startAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextSmall"
+                    android:layout_marginStart="@dimen/margin_start_very_small"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_very_small"
+                android:layout_marginEnd="@dimen/margin_end_very_small"
+                android:layout_marginBottom="@dimen/margin_bottom_small"
+                android:padding="@dimen/default_padding_small"
+                style="@style/BackgroundContainerEditText1"
+                android:textColor="@color/colorOnBackgroundContainer"
+                android:visibility="gone"
+                android:text="@{note.message}"
+                app:layout_constraintTop_toBottomOf="@id/li_reminded"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

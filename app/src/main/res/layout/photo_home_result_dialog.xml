@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable name="photo" type="com.marveloushost.betterrank.model.PhotoModel" />
+        <variable name="approved" type="com.marveloushost.betterrank.model.ApprovedModel" />
+        <variable name="percent" type="Float" />
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layoutDirection="ltr">
+
+        <!-- Title -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            style="@style/TextVeryLarge"
+            android:textColor="@color/colorOnSurface"
+            android:text="@{photo.title}" />
+
+        <!-- Photo -->
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/margin_top_big"
+            app:riv_corner_radius="@dimen/default_radius"
+            android:scaleType="centerCrop"
+            imageLoadByUrl="@{photo.url}" />
+
+        <!-- Lighting Feedback -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_top"
+            android:visibility="@{approved.lightingPercent &lt; percent ? View.VISIBLE : View.GONE, default=gone}">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_lighting"
+                    app:tint="@color/colorOnPrimary"
+                    android:padding="@dimen/default_padding_small"
+                    android:background="@drawable/tertiary_background_gradient2"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/margin_start_so_small"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="@string/lighting"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_very_small"
+                android:maxLines="3"
+                style="@style/TextMedium"
+                android:textColor="@color/colorTertiary"
+                android:text="@{approved.lighting}"/>
+        </LinearLayout>
+
+        <!-- Angle Feedback -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_top"
+            android:visibility="@{approved.anglePercent &lt; percent ? View.VISIBLE : View.GONE, default=gone}">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_angle"
+                    app:tint="@color/colorOnPrimary"
+                    android:padding="@dimen/default_padding_small"
+                    android:background="@drawable/tertiary_background_gradient2"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/margin_start_so_small"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="@string/proper_angle"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_very_small"
+                android:maxLines="3"
+                style="@style/TextMedium"
+                android:textColor="@color/colorTertiary"
+                android:text="@{approved.angle}"/>
+        </LinearLayout>
+
+        <!-- Focus Feedback -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_top"
+            android:visibility="@{approved.focusPercent &lt; percent ? View.VISIBLE : View.GONE, default=gone}">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_focus"
+                    app:tint="@color/colorOnPrimary"
+                    android:padding="@dimen/default_padding_small"
+                    android:background="@drawable/tertiary_background_gradient2"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/margin_start_so_small"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="@string/focus_on_details"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_very_small"
+                android:maxLines="3"
+                style="@style/TextMedium"
+                android:textColor="@color/colorTertiary"
+                android:text="@{approved.focus}"/>
+        </LinearLayout>
+
+        <!-- Success Message -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_big"
+            android:layout_marginBottom="@dimen/margin_top_big"
+            style="@style/TextLarge"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/your_image_had_no_problems_and_was_approved"
+            android:visibility="@{approved.done ? View.VISIBLE : View.GONE, default=gone}" />
+
+        <!-- Push buttons to bottom -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_use_this"
+                style="@style/TertiaryButtonGradient1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Use This Photo"
+                app:backgroundTint="@null" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/img_close"
+                style="@style/PrimaryButtonGradient"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Skip"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/progress_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
+    <ProgressBar
+        android:id="@+id/progress_loader"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+    </FrameLayout>
+</layout>

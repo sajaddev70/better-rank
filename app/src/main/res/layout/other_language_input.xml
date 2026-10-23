@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter language"
+        style="@style/TextMedium"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_other_language"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:minHeight="48dp"
+        android:contentDescription="Enter custom language"
+        style="@style/BackgroundContainerEditText1"/>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.marveloushost.betterrank.viewModel.SplashViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr"
+        android:background="@color/colorSurface">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_big_logo"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextVeryLarge"
+                android:textStyle="bold"
+                android:textColor="@color/colorOnSurface"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="@string/app_name"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:textColor="@color/colorOnSurface"
+                android:text="@string/by_marvelous_host"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/PrimaryButtonGradient"
+            android:drawableTint="@color/colorOnBackground"
+            android:text="@string/try_again"
+            android:enabled="@{!viewModel.isLoading}"
+            android:visibility="@{viewModel.pingGoogleResult==2?View.VISIBLE:View.GONE,default=gone}"
+            android:id="@+id/btn_tryAgain"/>
+
+        <LinearLayout
+            android:id="@+id/permissionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/colorSurface"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:text="Camera, notification and storage permissions are required for app to function properly."
+                android:textAlignment="center"
+                android:padding="24dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGrantPermission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PrimaryButtonGradient"
+                android:text="Allow"/>
+        </LinearLayout>
+
+
+
+        <!--        <include-->
+<!--            layout="@layout/loading"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/default_height"-->
+<!--            android:id="@+id/baseLoading"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            android:layout_marginBottom="@dimen/margin_bottom"-->
+<!--            android:visibility="@{viewModel.isLoading?View.VISIBLE:View.GONE,default=gone}"/>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

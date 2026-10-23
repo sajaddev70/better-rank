@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary colors -->
+    <color name="colorPrimary">@color/green_300</color>
+    <color name="colorPrimaryAlpha">#96dbd6</color>
+    <color name="colorOnPrimary">@color/neutral_0</color>
+    <color name="colorPrimaryContainer">@color/green_100</color>
+    <color name="colorOnPrimaryContainer">@color/green_500</color>
+
+    <!-- Secondary colors -->
+    <color name="colorSecondary">@color/green_200</color>
+    <color name="colorOnSecondary">@color/neutral_900</color>
+    <color name="colorSecondaryContainer">@color/green_50</color>
+    <color name="colorOnSecondaryContainer">@color/green_500</color>
+
+    <!-- Tertiary colors -->
+    <color name="colorTertiary">@color/orange_300</color>
+    <color name="colorOnTertiary">@color/neutral_0</color>
+    <color name="colorTertiaryContainer">@color/orange_100</color>
+    <color name="colorOnTertiaryContainer">@color/orange_500</color>
+
+    <!-- Background and Surface -->
+    <color name="colorBackground">@color/neutral_20</color>
+    <color name="colorOnBackground">@color/neutral_900</color>
+    <color name="colorBackgroundContainer">@color/neutral_40</color>
+    <color name="colorOnBackgroundContainer">@color/neutral_700</color>
+    <color name="colorSurface">@color/neutral_0</color>
+    <color name="colorOnSurface">@color/neutral_900</color>
+    <color name="colorSurfaceContainer">@color/neutral_10</color>
+    <color name="colorOnSurfaceContainer">@color/neutral_700</color>
+
+    <!-- Error colors -->
+    <color name="colorError">#ffb4ab</color>
+    <color name="colorOnError">#690005</color>
+    <color name="colorErrorContainer">#93000a</color>
+    <color name="colorOnErrorContainer">#ffb4ab</color>
+
+    <!-- Optional -->
+    <color name="colorOutline">@color/neutral_200</color>
+
+
+
+    <!-- ===================== -->
+    <!--          Green        -->
+    <!-- ===================== -->
+    <color name="green_50">#e6f6f5</color>
+    <color name="green_75">#96dbd6</color>
+    <color name="green_100">#6bcbc4</color>
+    <color name="green_200">#2bb5ab</color>
+    <color name="green_300">#00a69a</color>
+    <color name="green_400">#00746c</color>
+    <color name="green_500">#00655e</color>
+
+
+    <!-- ===================== -->
+    <!--         Orange        -->
+    <!-- ===================== -->
+    <color name="orange_50">#feeee9</color>
+    <color name="orange_75">#fcbaa4</color>
+    <color name="orange_100">#fb9d7e</color>
+    <color name="orange_200">#f97346</color>
+    <color name="orange_300">#f85620</color>
+    <color name="orange_400">#ae3c16</color>
+    <color name="orange_500">#973414</color>
+
+    <!-- ===================== -->
+    <!--        Neutral        -->
+    <!-- ===================== -->
+    <color name="neutral_0">#ffffff</color>
+    <color name="neutral_10">#fafafa</color>
+    <color name="neutral_20">#f5f5f6</color>
+    <color name="neutral_30">#ebeced</color>
+    <color name="neutral_40">#dee0e1</color>
+    <color name="neutral_50">#c0c3c6</color>
+    <color name="neutral_60">#b1b4b9</color>
+    <color name="neutral_70">#a4a8ad</color>
+    <color name="neutral_80">#9599a0</color>
+    <color name="neutral_90">#868b92</color>
+    <color name="neutral_100">#777c84</color>
+    <color name="neutral_200">#686e77</color>
+    <color name="neutral_300">#595f69</color>
+    <color name="neutral_400">#4c535e</color>
+    <color name="neutral_500">#3d4550</color>
+    <color name="neutral_600">#303945</color>
+    <color name="neutral_700">#1f2835</color>
+    <color name="neutral_800">#101927</color>
+    <color name="neutral_900">#030d1c</color>
+
+</resources>

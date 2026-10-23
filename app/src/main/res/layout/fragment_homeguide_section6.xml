@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="viewModel" type="com.marveloushost.betterrank.viewModel.HomeGuideViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="@color/colorOnPrimary"
+                    app:srcCompat="@drawable/ic_house_amenities"
+                    android:padding="@dimen/default_padding_small"
+                    android:background="@drawable/primary_background_gradient2"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"
+                    android:text="When you got in"/>
+            </LinearLayout>
+
+            <!-- Wi-Fi Password -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginTop="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Wi-Fi Password"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minLines="1"
+                android:gravity="top|start"
+                style="@style/BackgroundContainerEditText1"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.wifiPassword}" />
+
+            <!-- Property Rules -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Property rules"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                style="@style/BackgroundContainerEditText1"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="5"
+                android:gravity="top|start"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.propertyRules}" />
+
+            <!-- Smoking Rules -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Smoking rules"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                style="@style/BackgroundContainerEditText1"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="5"
+                android:gravity="top|start"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.smokingRules}" />
+
+            <!-- Pets Policy -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Pets policy"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                style="@style/BackgroundContainerEditText1"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="5"
+                android:gravity="top|start"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.petsPolicy}" />
+
+            <!-- Quiet Hours -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Quiet hours"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minLines="5"
+                android:gravity="top|start"
+                style="@style/BackgroundContainerEditText1"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.quietHours}" />
+
+            <!-- Lock-out Policy -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginBottom="4dp"
+                android:text="Lock-out, lost keys, damage policy"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/BackgroundContainerEditText1"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="5"
+                android:gravity="top|start"
+                android:padding="2dp"
+                android:text="@={viewModel.resultUpdateHomeGuide.lockoutPolicy}" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

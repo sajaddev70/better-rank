@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="viewModel" type="com.marveloushost.betterrank.viewModel.HomeGuideViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="@color/colorOnPrimary"
+                    app:srcCompat="@drawable/ic_basic_information_house"
+                    android:padding="@dimen/default_padding_small"
+                    android:background="@drawable/primary_background_gradient2"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"
+                    android:text="Contact info"/>
+            </LinearLayout>
+
+            <!-- Contact Channel Title -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextMedium"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginTop="@dimen/margin_top_big"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/colorOnBackground"
+                android:text="Contact Channel"/>
+
+            <!-- CheckBox Group -->
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/ll_contact_channel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start"
+                android:layout_marginEnd="@dimen/margin_start"
+                android:layout_marginBottom="16dp"
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:justifyContent="flex_start">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WhatsApp"
+                    android:checked="@{viewModel.resultUpdateHomeGuide.contactChannels.contains(`WhatsApp`)}"
+                    android:onClick="@{() -> viewModel.toggleContactChannel(`WhatsApp`)}" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call"
+                    android:checked="@{viewModel.resultUpdateHomeGuide.contactChannels.contains(`Call`)}"
+                    android:onClick="@{() -> viewModel.toggleContactChannel(`Call`)}" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SMS"
+                    android:checked="@{viewModel.resultUpdateHomeGuide.contactChannels.contains(`SMS`)}"
+                    android:onClick="@{() -> viewModel.toggleContactChannel(`SMS`)}" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:checked="@{viewModel.resultUpdateHomeGuide.contactChannels.contains(`Other`)}"
+                    android:onClick="@{() -> viewModel.toggleContactChannel(`Other`)}" />
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+
+            <!-- Contact Number -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:maxLines="1"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="Contact Number"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_height"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:layout_marginTop="@dimen/margin_top_very_small"
+                    style="@style/BackgroundContainerEditText1"
+                    android:textColor="@color/colorOnBackgroundContainer"
+                    android:padding="2dp"
+                    android:hint=""
+                    android:text="@={viewModel.resultUpdateHomeGuide.contactNumber}" />
+            </LinearLayout>
+
+            <!-- Emergency Contact Number -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:maxLines="1"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="Emergency Contact Number"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_height"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:layout_marginTop="@dimen/margin_top_very_small"
+                    style="@style/BackgroundContainerEditText1"
+                    android:textColor="@color/colorOnBackgroundContainer"
+                    android:padding="2dp"
+                    android:hint=""
+                    android:text="@={viewModel.resultUpdateHomeGuide.emergencyContact}" />
+            </LinearLayout>
+
+            <!-- More Contact Info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextMedium"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:maxLines="1"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="More Contact info"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:gravity="top|start"
+                    android:layout_marginTop="@dimen/margin_top_very_small"
+                    style="@style/BackgroundContainerEditText1"
+                    android:textColor="@color/colorOnBackgroundContainer"
+                    android:padding="2dp"
+                    android:hint=""
+                    android:text="@={viewModel.resultUpdateHomeGuide.moreContactInfo}" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>
