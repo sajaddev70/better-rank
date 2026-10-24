@@ -1,8 +1,14 @@
 package com.marveloushost.betterrank.ui
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContextCompat
 import androidx.core.text.HtmlCompat
 import androidx.credentials.CredentialManager
 import androidx.credentials.CustomCredential
@@ -30,6 +36,12 @@ class Login:BaseActivity() {
 
     val viewModel: LoginViewModel by viewModels()
     val binding: LoginBinding by lazy { DataBindingUtil.setContentView(this, R.layout.login) }
+
+    // Whatever the user picks in the system dialog, carry on with the login
+    private val notificationPermissionLauncher =
+        registerForActivityResult(ActivityResultContracts.RequestPermission()) {
+            startGoogleSignIn()
+        }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -90,8 +102,35 @@ class Login:BaseActivity() {
         }
 
         binding.btnGoogle.setOnClickListener {
-            startGoogleSignIn()
+            askNotificationPermissionThenLogin()
         }
+    }
+
+    /** Explain notifications once before login; never block the login if the user declines. */
+    private fun askNotificationPermissionThenLogin() {
+        val prefs = getPreferences(MODE_PRIVATE)
+        val alreadyAsked = prefs.getBoolean(NOTIFICATION_PROMPT_SHOWN, false)
+        val needsPermission = Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+                ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) !=
+                PackageManager.PERMISSION_GRANTED
+
+        if (!needsPermission || alreadyAsked) {
+            startGoogleSignIn()
+            return
+        }
+
+        prefs.edit().putBoolean(NOTIFICATION_PROMPT_SHOWN, true).apply()
+        AlertDialog.Builder(this)
+            .setTitle(R.string.notification_permission_title)
+            .setMessage(R.string.notification_permission_message)
+            .setCancelable(false)
+            .setPositiveButton(R.string.notification_permission_ok) { _, _ ->
+                notificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+            }
+            .setNegativeButton(R.string.notification_permission_later) { _, _ ->
+                startGoogleSignIn()
+            }
+            .show()
     }
 
     private fun googleIdOption(): GetGoogleIdOption {
@@ -180,5 +219,6 @@ class Login:BaseActivity() {
         const val EMAIL="email"
         const val NAME="name"
         const val PHOTO="photo"
+        private const val NOTIFICATION_PROMPT_SHOWN="notification_prompt_shown"
     }
 }

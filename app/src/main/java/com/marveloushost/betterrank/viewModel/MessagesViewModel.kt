@@ -70,7 +70,7 @@ class MessagesViewModel @Inject constructor() : ViewModel() {
 
                     val doc = snap.documents.firstOrNull()
                     if (doc != null) {
-                        val titles = doc.get("titles") as? List<String>
+                        val titles = (doc.get("titles") as? List<*>)?.filterIsInstance<String>()
                         val lastTitle = titles?.firstOrNull()
                         val lastTime = doc.getLong("sentAt")
 

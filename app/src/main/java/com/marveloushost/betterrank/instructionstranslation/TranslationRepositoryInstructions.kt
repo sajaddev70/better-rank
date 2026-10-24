@@ -123,6 +123,8 @@ class TranslationRepositoryInstructions @Inject constructor(
 
     fun isServiceActive(context: Context): Boolean {
         val manager = context.getSystemService(Context.ACTIVITY_SERVICE) as android.app.ActivityManager
+        // Deprecated, but still returns the caller's own services, which is all we need here
+        @Suppress("DEPRECATION")
         return manager.getRunningServices(Int.MAX_VALUE)
             .any { it.service.className == InstructionsTranslationService::class.java.name }
     }

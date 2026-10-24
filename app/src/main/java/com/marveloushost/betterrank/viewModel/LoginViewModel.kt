@@ -4,6 +4,8 @@ import android.app.Application
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
+import com.google.firebase.FirebaseNetworkException
+import com.marveloushost.betterrank.R
 import com.marveloushost.betterrank.hilt.modual.HiltSharedPrefModule
 import com.marveloushost.betterrank.model.UserModel
 import com.marveloushost.betterrank.repository.AppRepository
@@ -33,8 +35,14 @@ class LoginViewModel @Inject constructor(appRepository: AppRepository, applicati
             } catch (e: Exception) {
 //                Log.e("BetterRankException",e.toString())
                 isLoading.value = false
+                showLoginError(e)
             }
         }
+    }
+
+    private fun showLoginError(e: Exception) {
+        val res = if (e is FirebaseNetworkException) R.string.network_error else R.string.login_error
+        showMessage.value = getApplication<Application>().getString(res)
     }
 
     private fun getUser(uid: String, name: String?, email: String?, photoUrl: String?){
@@ -58,6 +66,7 @@ class LoginViewModel @Inject constructor(appRepository: AppRepository, applicati
 
             }catch (e:Exception){
 //                Log.e("BetterRankException",e.toString())
+                showLoginError(e)
             }finally {
                 isLoading.value = false
             }

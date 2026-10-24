@@ -34,6 +34,7 @@ class EditGuestActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        applySystemBarInsets()
 //        Log.e("EditGuest", "onCreate")
         binding = ActivityEditGuestBinding.inflate(layoutInflater)
         setContentView(binding.root)

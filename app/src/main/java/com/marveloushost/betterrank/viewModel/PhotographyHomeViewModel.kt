@@ -381,7 +381,7 @@ class PhotographyHomeViewModel @Inject constructor(
                     val photos = imagesSnap.documents.mapNotNull { imgDoc ->
                         val url = imgDoc.getString("url") ?: return@mapNotNull null
                         val title = imgDoc.getString("title")
-                            ?: section.replace("_", " ").capitalize()
+                            ?: section.replace("_", " ").replaceFirstChar { it.uppercase() }
 
                         PhotoModel(
                             name = section,

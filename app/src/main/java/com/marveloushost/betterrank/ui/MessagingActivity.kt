@@ -9,7 +9,9 @@ import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.IntentCompat
 import androidx.lifecycle.lifecycleScope
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
@@ -44,10 +46,11 @@ class MessagingActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        applySystemBarInsets()
         setContentView(R.layout.activity_messaging)
 
         // Load guest
-        guest = intent.getParcelableExtra("GUEST_OBJECT")
+        guest = IntentCompat.getParcelableExtra(intent, "GUEST_OBJECT", GuestModel::class.java)
             ?: throw IllegalStateException("Guest not passed")
 
 
@@ -96,7 +99,7 @@ class MessagingActivity : AppCompatActivity() {
             val intent = Intent(this, InstructionTranslationActivity::class.java)
             intent.putExtra("guest", guest)
             intent.putExtra("guide", homeGuide)
-            startActivityForResult(intent, 555)
+            translationLauncher.launch(intent)
         }
 
 
@@ -113,12 +116,13 @@ class MessagingActivity : AppCompatActivity() {
     }
 
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
+    private val translationLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        val data = result.data
+        if (result.resultCode == RESULT_OK && data != null) {
 
-        if (requestCode == 555 && resultCode == RESULT_OK && data != null) {
-
-            val msg = data.getStringExtra("messageText") ?: return
+            val msg = data.getStringExtra("messageText") ?: return@registerForActivityResult
             val titles = data.getStringArrayListExtra("titles") ?: arrayListOf()
 
             sendWhatsAppMessage(guest.phoneNumber, msg)

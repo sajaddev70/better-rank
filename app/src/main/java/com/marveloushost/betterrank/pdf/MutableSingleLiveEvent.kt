@@ -22,5 +22,5 @@ open class MutableSingleLiveEvent<T> : MutableLiveData<T>() {
         super.setValue(value)
     }
 
-    fun call() = setValue(null as T)
+    fun call() = setValue(null)
 }

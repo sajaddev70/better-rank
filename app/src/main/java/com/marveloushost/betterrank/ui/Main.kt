@@ -4,6 +4,7 @@ import android.Manifest
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
+import androidx.activity.OnBackPressedCallback
 import androidx.databinding.DataBindingUtil
 import com.marveloushost.betterrank.R
 import com.marveloushost.betterrank.databinding.MainBinding
@@ -53,7 +54,7 @@ class Main : BaseActivity() {
         transaction.commit()
 
         //BottomNavigation
-        binding.bottomNavigation.selectedItemId= R.id.fl_home
+        binding.bottomNavigation.selectedItemId= R.id.home
     }
 
     override fun onClickView() {
@@ -66,6 +67,11 @@ class Main : BaseActivity() {
             changeFragment(item.itemId)
             true
         }
+
+        // targetSdk 36 no longer routes back gestures through onBackPressed()
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() = handleBack()
+        })
     }
 
     private fun changeFragment(id:Int){
@@ -87,7 +93,7 @@ class Main : BaseActivity() {
             }
         }
     }
-    override fun onBackPressed() {
+    private fun handleBack() {
 
         // If not in home move to home
         if (viewModel.whichFragment.value != 1) {

@@ -28,19 +28,24 @@ import com.marveloushost.betterrank.R
 import com.marveloushost.betterrank.hilt.modual.HiltNetworkModule
 import dagger.hilt.android.AndroidEntryPoint
 
+// Edge-to-edge is enforced from targetSdk 35+, so pad the content root by the system bars and IME.
+fun AppCompatActivity.applySystemBarInsets() {
+    WindowCompat.setDecorFitsSystemWindows(window, false)
+    ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content)) { view, insets ->
+        val sysInsets = insets.getInsets(
+            WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.ime()
+        )
+        view.setPadding(sysInsets.left, sysInsets.top, sysInsets.right, sysInsets.bottom)
+        WindowInsetsCompat.CONSUMED
+    }
+}
+
 @AndroidEntryPoint
 abstract  class BaseActivity : AppCompatActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        WindowCompat.setDecorFitsSystemWindows(window, false)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content)) { view, insets ->
-            val sysInsets = insets.getInsets(
-                WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.ime()
-            )
-            view.setPadding(0, sysInsets.top, 0, sysInsets.bottom)
-            WindowInsetsCompat.CONSUMED
-        }
+        applySystemBarInsets()
     }
 
     abstract fun initView()

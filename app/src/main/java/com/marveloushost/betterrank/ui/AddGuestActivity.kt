@@ -32,6 +32,7 @@ class AddGuestActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        applySystemBarInsets()
         binding = ActivityAddGuestBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -242,7 +243,7 @@ class AddGuestActivity : AppCompatActivity() {
         if (countryName.isBlank()) return
 
         val matchedIso = java.util.Locale.getISOCountries().firstOrNull { iso ->
-            java.util.Locale("", iso).displayCountry.equals(countryName, ignoreCase = true)
+            java.util.Locale.Builder().setRegion(iso).build().displayCountry.equals(countryName, ignoreCase = true)
         }
 
         if (matchedIso != null) {

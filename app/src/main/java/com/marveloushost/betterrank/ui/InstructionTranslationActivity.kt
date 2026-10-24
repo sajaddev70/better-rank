@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.IntentCompat
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import com.marveloushost.betterrank.databinding.ActivityInstructionTranslationBinding
@@ -34,12 +35,13 @@ class InstructionTranslationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        applySystemBarInsets()
 
         binding = ActivityInstructionTranslationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        guest = intent.getParcelableExtra("guest")!!
-        homeGuide = intent.getParcelableExtra("guide")!!
+        guest = IntentCompat.getParcelableExtra(intent, "guest", GuestModel::class.java)!!
+        homeGuide = IntentCompat.getParcelableExtra(intent, "guide", HomeGuideModel::class.java)!!
 
         binding.vm = vm
         binding.guestName = guest.name

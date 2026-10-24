@@ -37,6 +37,7 @@ firebaseFirestoreKtx = "25.1.4"
 firebaseStorage = "22.0.0"
 roundedimageview = "2.3.0"
 firebaseConfigKtx = "22.0.1"
+chucker = "4.1.0"
 
 [libraries]
 androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraCore" }
@@ -80,6 +81,8 @@ roundedimageview = { module = "com.makeramen:roundedimageview", version.ref = "r
 singledateandtimepicker = { module = "com.github.florent37:singledateandtimepicker", version.ref = "singledateandtimepicker" }
 text-recognition = { module = "com.google.mlkit:text-recognition", version.ref = "textRecognition" }
 firebase-config-ktx = { group = "com.google.firebase", name = "firebase-config-ktx", version.ref = "firebaseConfigKtx" }
+chucker = { module = "com.github.chuckerteam.chucker:library", version.ref = "chucker" }
+chucker-no-op = { module = "com.github.chuckerteam.chucker:library-no-op", version.ref = "chucker" }
 
 
 [plugins]

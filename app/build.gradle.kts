@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -10,7 +12,7 @@ plugins {
 
 android {
     namespace = "com.marveloushost.betterrank"
-    compileSdk = 35
+    compileSdk = 36
 
     buildFeatures{
         dataBinding = true
@@ -18,27 +20,48 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.marveloushost.betterrank"
+        applicationId = "com.marvelous.betterrank"
         minSdk = 26
-        targetSdk = 35
-        versionCode = 12
-        versionName = "1.1.1"
+        targetSdk = 36
+        versionCode = 13
+        versionName = "1.1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    val localProps = Properties().apply {
+        val f = rootProject.file("local.properties")
+        if (f.exists()) f.inputStream().use { load(it) }
+    }
+    val releaseStoreFile = localProps.getProperty("RELEASE_STORE_FILE")
+
+    signingConfigs {
+        if (releaseStoreFile != null && rootProject.file(releaseStoreFile).exists()) {
+            create("release") {
+                storeFile = rootProject.file(releaseStoreFile)
+                storePassword = localProps.getProperty("RELEASE_STORE_PASSWORD")
+                keyAlias = localProps.getProperty("RELEASE_KEY_ALIAS")
+                keyPassword = localProps.getProperty("RELEASE_KEY_PASSWORD")
+            }
+        }
+    }
+    val signing = signingConfigs.findByName("release") ?: signingConfigs.getByName("debug")
+
     buildTypes {
+        debug {
+            signingConfig = signing
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signing
         }
     }
     compileOptions {
-        isCoreLibraryDesugaringEnabled
+        isCoreLibraryDesugaringEnabled = true
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
@@ -76,6 +99,10 @@ dependencies {
     // Retrofit & OkHttp
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+
+    //Chucker (HTTP inspector, no-op in release)
+    debugImplementation(libs.chucker)
+    releaseImplementation(libs.chucker.no.op)
 
     // Paging 3 Core
     implementation(libs.androidx.paging.runtime)

@@ -2,6 +2,7 @@ package com.marveloushost.betterrank.hilt.modual
 
 import android.content.Context
 import android.content.SharedPreferences
+import com.chuckerteam.chucker.api.ChuckerInterceptor
 import com.marveloushost.betterrank.networkMonitor.LiveNetworkMonitor
 import com.marveloushost.betterrank.networkMonitor.NetworkMonitor
 import com.marveloushost.betterrank.networkMonitor.NetworkMonitorInterceptor
@@ -64,7 +65,8 @@ class HiltNetworkModule {
 
     @Provides
     @Singleton
-    fun providerOkHttpClient(sharedPreferences: SharedPreferences,
+    fun providerOkHttpClient(@ApplicationContext appContext: Context,
+                             sharedPreferences: SharedPreferences,
                              networkMonitorInterceptor: NetworkMonitorInterceptor): OkHttpClient
     {
         return OkHttpClient.Builder()
@@ -90,6 +92,7 @@ class HiltNetworkModule {
                 }
             }
             .addInterceptor(networkMonitorInterceptor)
+            .addInterceptor(ChuckerInterceptor.Builder(appContext).build())
             .retryOnConnectionFailure(true)
             .readTimeout(70, TimeUnit.SECONDS)
             .writeTimeout(70, TimeUnit.SECONDS)

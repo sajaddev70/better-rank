@@ -7,6 +7,7 @@ import android.os.CountDownTimer
 import android.util.Log
 import android.view.View
 import androidx.activity.viewModels
+import androidx.core.content.IntentCompat
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.marveloushost.betterrank.R
@@ -22,7 +23,7 @@ class Reviews : BaseActivity() {
     private val viewModel: ReviewsViewModel by viewModels()
     private val binding: ReviewsBinding by lazy { DataBindingUtil.setContentView(this, R.layout.reviews) }
     private val airbnbModel: AirBnbResponseModel? by lazy {
-        intent.getSerializableExtra("airBnbResponse") as? AirBnbResponseModel
+        IntentCompat.getSerializableExtra(intent, "airBnbResponse", AirBnbResponseModel::class.java)
     }
     private val homeId: String by lazy { intent.getStringExtra("homeId").orEmpty() }
     private lateinit var reviewAdapter: ReviewAdapter

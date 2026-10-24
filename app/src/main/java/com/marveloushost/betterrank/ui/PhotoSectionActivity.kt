@@ -14,6 +14,7 @@ import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.appcompat.widget.AppCompatButton
@@ -112,6 +113,16 @@ class PhotoSectionActivity : BaseActivity() {
 
         binding = ActivityPhotoSectionBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Block back while AI analysis is running
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                if (analyzingView != null) return
+                isEnabled = false
+                onBackPressedDispatcher.onBackPressed()
+                isEnabled = true
+            }
+        })
 
         // Read arguments FIRST
         currentSection = intent.getStringExtra("SECTION") ?: return finish()
@@ -413,7 +424,7 @@ class PhotoSectionActivity : BaseActivity() {
         "building_door" -> "Building Door"
         "window_views" -> "Window Views"
         "personality" -> "Personality of the House"
-        else -> currentSection.replace("_", " ").capitalize()
+        else -> currentSection.replace("_", " ").replaceFirstChar { it.uppercase() }
     }
 
     private fun takePhoto() {
@@ -450,10 +461,6 @@ class PhotoSectionActivity : BaseActivity() {
         binding.btnCheckQuality.alpha = 0.3f
     }
 
-    override fun onBackPressed() {
-        if (analyzingView != null) return
-        super.onBackPressed()
-    }
 
 //    private fun logApprovalResponse(approved: ApprovedModel) {
 //        val threshold = 50f
