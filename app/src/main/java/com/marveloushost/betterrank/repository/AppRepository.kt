@@ -22,6 +22,7 @@ import com.marveloushost.betterrank.model.HomeModel
 import com.marveloushost.betterrank.model.NoteModel
 import com.marveloushost.betterrank.model.UserModel
 import com.marveloushost.betterrank.retrofit.RequestApi
+import com.marveloushost.betterrank.util.RemoteConfigManager
 import com.openai.client.OpenAIClient
 import com.openai.client.okhttp.OpenAIOkHttpClient
 import com.openai.models.ChatModel
@@ -242,6 +243,13 @@ class AppRepository(
     suspend fun getAirbnbInfo(url: String): Result<Response<AirBnbResponseModel>> = withContext(Dispatchers.IO) {
 
         val airBnbRequestModel=AirBnbRequestModel(input = listOf(AirBnbRequestModel.Input(url = url)))
+
+        // The startup Remote Config fetch can fail or still be running, which sends the
+        // request without an Authorization header (BrightData answers 401 "Credentials are missing")
+        if (HiltNetworkModule.BRIGHT_DATA_TOKEN.isBlank()) {
+            RemoteConfigManager.fetchAndActivate()
+            HiltNetworkModule.loadKeysFromRemoteConfig()
+        }
 
         return@withContext try {
             val response = requestApi.getAirbnbInfo(input=airBnbRequestModel)

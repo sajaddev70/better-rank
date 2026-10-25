@@ -67,7 +67,10 @@ class HomeRegisterViewModel
                     } else {
                         val errorBody = response.errorBody()?.string() ?: "No error body"
 //                        Log.e("BRIGHTDATA_ERROR", "HTTP ${response.code()}\n$errorBody")
-                        showMessage.value = "Server error: ${response.code()}"
+                        showMessage.value = when (response.code()) {
+                            401, 403 -> "Airbnb service authorization failed. Please try again later."
+                            else -> "Server error: ${response.code()}"
+                        }
                     }
                 },
                 onFailure = { error ->
