@@ -39,19 +39,39 @@ object MlKitHelper {
         }
     }
 
+    // OCR often inserts spaces ("rooms / 123"), wraps the id onto the next line,
+    // or misreads digits as letters (0 -> O, 1 -> l/I)
+    private val roomRegex = Regex("""(?i)rooms?\s*/\s*([0-9OoIl|]{5,})""")
+    private val shortLinkRegex = Regex("""(?i)airbnb\.[a-z.]{2,7}/(h|slink)/([A-Za-z0-9_-]+)""")
+
     private fun extractUrls(text: String): List<String> {
         val urls = mutableListOf<String>()
 
-        val roomRegex = Regex("""rooms/(\d+)""")
+        // Try the raw text first, then with all whitespace removed to join wrapped lines
+        val candidates = listOf(text, text.replace(Regex("""\s+"""), ""))
+        for (candidate in candidates) {
+            roomRegex.findAll(candidate).forEach { matchResult ->
+                val roomId = fixOcrDigits(matchResult.groupValues[1])
+                urls.add("https://www.airbnb.com/rooms/$roomId")
+            }
+            if (urls.isNotEmpty()) break
+        }
 
-        roomRegex.findAll(text).forEach { matchResult ->
-            val roomId = matchResult.groupValues[1]
-            val url = "https://www.airbnb.com/rooms/$roomId"
-            urls.add(url)
+        // Shared links like airbnb.com/h/<slug> or airbnb.com/slink/<code>
+        if (urls.isEmpty()) {
+            val compact = text.replace(Regex("""\s+"""), "")
+            shortLinkRegex.findAll(compact).forEach { matchResult ->
+                val (type, code) = matchResult.destructured
+                urls.add("https://www.airbnb.com/${type.lowercase()}/$code")
+            }
         }
 
         return urls.distinct()
     }
+
+    private fun fixOcrDigits(id: String): String = id
+        .replace('O', '0').replace('o', '0')
+        .replace('I', '1').replace('l', '1').replace('|', '1')
 
     private fun normalizeUrl(url: String): String {
         return if (url.startsWith("http://") || url.startsWith("https://")) {
