@@ -5,7 +5,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.marveloushost.betterrank.viewModel.GuestsViewModel" />
+            type="com.marvelous.betterrank.viewModel.GuestsViewModel" />
     </data>
     <LinearLayout
     android:layout_width="match_parent"

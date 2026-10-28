@@ -5,7 +5,7 @@
 
     <data>
         <import type="android.view.View"/>
-        <variable name="viewModel" type="com.marveloushost.betterrank.viewModel.ReviewsViewModel" />
+        <variable name="viewModel" type="com.marvelous.betterrank.viewModel.ReviewsViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

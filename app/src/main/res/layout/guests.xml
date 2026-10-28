@@ -4,10 +4,10 @@
 
     <data>
         <import type="android.view.View" />
-        <import type="com.marveloushost.betterrank.viewModel.GuestsViewModel" />
+        <import type="com.marvelous.betterrank.viewModel.GuestsViewModel" />
         <variable
             name="viewModel"
-            type="com.marveloushost.betterrank.viewModel.GuestsViewModel" />
+            type="com.marvelous.betterrank.viewModel.GuestsViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

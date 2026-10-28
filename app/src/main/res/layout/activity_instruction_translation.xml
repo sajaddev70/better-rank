@@ -5,7 +5,7 @@
     <data>
         <variable name="guestName" type="String" />
         <variable name="guestLanguage" type="String" />
-        <variable name="vm" type="com.marveloushost.betterrank.viewModel.SendInstructionsViewModel" />
+        <variable name="vm" type="com.marvelous.betterrank.viewModel.SendInstructionsViewModel" />
     </data>
 
     <LinearLayout

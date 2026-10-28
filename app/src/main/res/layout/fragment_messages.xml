@@ -5,7 +5,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.marveloushost.betterrank.viewModel.MessagesViewModel" />
+            type="com.marvelous.betterrank.viewModel.MessagesViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

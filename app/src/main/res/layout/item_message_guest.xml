@@ -5,11 +5,11 @@
     <data>
         <variable
             name="guest"
-            type="com.marveloushost.betterrank.model.GuestModel" />
+            type="com.marvelous.betterrank.model.GuestModel" />
 
         <variable
             name="viewModel"
-            type="com.marveloushost.betterrank.viewModel.MessagesViewModel" />
+            type="com.marvelous.betterrank.viewModel.MessagesViewModel" />
     </data>
 
     <androidx.cardview.widget.CardView

@@ -6,7 +6,7 @@
         <import type="android.view.View"/>
         <variable
             name="viewModel"
-            type="com.marveloushost.betterrank.viewModel.PhotographyHomeViewModel" />
+            type="com.marvelous.betterrank.viewModel.PhotographyHomeViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -113,7 +113,7 @@
                         android:orientation="vertical"
                         android:gravity="center_horizontal"
                         android:id="@+id/li_coverPhoto"
-                        approvedView="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.CoverPhoto.value`).isEmpty()}"
+                        approvedView="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.CoverPhoto.value`).isEmpty()}"
                         android:clickable="@{!viewModel.isLoading}">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -133,7 +133,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:tint="@color/colorPrimary"
                                 android:tag="icAi"
-                                android:visibility="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.CoverPhoto.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
+                                android:visibility="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.CoverPhoto.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
 
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="wrap_content"
@@ -189,7 +189,7 @@
                         android:orientation="vertical"
                         android:gravity="center_horizontal"
                         android:id="@+id/li_livingRoom"
-                        approvedView="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.LivingRoom.value`).isEmpty()}"
+                        approvedView="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.LivingRoom.value`).isEmpty()}"
                         android:clickable="@{!viewModel.isLoading}">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -209,7 +209,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:tint="@color/colorPrimary"
                                 android:tag="icAi"
-                                android:visibility="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.LivingRoom.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
+                                android:visibility="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.LivingRoom.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
 
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="wrap_content"
@@ -264,7 +264,7 @@
                         android:orientation="vertical"
                         android:gravity="center_horizontal"
                         android:id="@+id/li_bedrooms"
-                        approvedView="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.Bedroom.value`).isEmpty()}"
+                        approvedView="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.Bedroom.value`).isEmpty()}"
                         android:clickable="@{!viewModel.isLoading}">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -284,7 +284,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:tint="@color/colorPrimary"
                                 android:tag="icAi"
-                                android:visibility="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.Bedroom.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
+                                android:visibility="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.Bedroom.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
 
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="wrap_content"
@@ -350,7 +350,7 @@
                         android:orientation="vertical"
                         android:gravity="center_horizontal"
                         android:id="@+id/li_kitchen"
-                        approvedView="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.Kitchen.value`).isEmpty()}"
+                        approvedView="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.Kitchen.value`).isEmpty()}"
                         android:clickable="@{!viewModel.isLoading}">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -370,7 +370,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:tint="@color/colorPrimary"
                                 android:tag="icAi"
-                                android:visibility="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.Kitchen.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
+                                android:visibility="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.Kitchen.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -424,7 +424,7 @@
                         android:orientation="vertical"
                         android:gravity="center_horizontal"
                         android:id="@+id/li_bathroom"
-                        approvedView="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.Bathroom.value`).isEmpty()}"
+                        approvedView="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.Bathroom.value`).isEmpty()}"
                         android:clickable="@{!viewModel.isLoading}">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -444,7 +444,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:tint="@color/colorPrimary"
                                 android:tag="icAi"
-                                android:visibility="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.Bathroom.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
+                                android:visibility="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.Bathroom.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
 
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="wrap_content"
@@ -499,7 +499,7 @@
                         android:orientation="vertical"
                         android:gravity="center_horizontal"
                         android:id="@+id/li_yard"
-                        approvedView="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.Yard.value`).isEmpty()}"
+                        approvedView="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.Yard.value`).isEmpty()}"
                         android:clickable="@{!viewModel.isLoading}">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -519,7 +519,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:tint="@color/colorPrimary"
                                 android:tag="icAi"
-                                android:visibility="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.Yard.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
+                                android:visibility="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.Yard.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
 
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="wrap_content"
@@ -585,7 +585,7 @@
                         android:orientation="vertical"
                         android:gravity="center_horizontal"
                         android:id="@+id/li_buildingDoor"
-                        approvedView="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.BuildingDoor.value`).isEmpty()}"
+                        approvedView="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.BuildingDoor.value`).isEmpty()}"
                         android:clickable="@{!viewModel.isLoading}">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -605,7 +605,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:tint="@color/colorPrimary"
                                 android:tag="icAi"
-                                android:visibility="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.BuildingDoor.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
+                                android:visibility="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.BuildingDoor.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
 
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="wrap_content"
@@ -660,7 +660,7 @@
                         android:orientation="vertical"
                         android:gravity="center_horizontal"
                         android:id="@+id/li_windowViews"
-                        approvedView="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.WindowViews.value`).isEmpty()}"
+                        approvedView="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.WindowViews.value`).isEmpty()}"
                         android:clickable="@{!viewModel.isLoading}">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -680,7 +680,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:tint="@color/colorPrimary"
                                 android:tag="icAi"
-                                android:visibility="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.WindowViews.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
+                                android:visibility="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.WindowViews.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
 
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="wrap_content"
@@ -735,7 +735,7 @@
                         android:orientation="vertical"
                         android:gravity="center_horizontal"
                         android:id="@+id/li_personality"
-                        approvedView="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.Personality.value`).isEmpty()}"
+                        approvedView="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.Personality.value`).isEmpty()}"
                         android:clickable="@{!viewModel.isLoading}">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -755,7 +755,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:tint="@color/colorPrimary"
                                 android:tag="icAi"
-                                android:visibility="@{!viewModel.getPhotosForItem(`com.marveloushost.betterrank.model.PhotoName.Personality.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
+                                android:visibility="@{!viewModel.getPhotosForItem(`com.marvelous.betterrank.model.PhotoName.Personality.value`).isEmpty() ? View.VISIBLE : View.GONE, default=gone}"/>
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"

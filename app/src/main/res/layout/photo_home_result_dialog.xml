@@ -4,8 +4,8 @@
 
     <data>
         <import type="android.view.View"/>
-        <variable name="photo" type="com.marveloushost.betterrank.model.PhotoModel" />
-        <variable name="approved" type="com.marveloushost.betterrank.model.ApprovedModel" />
+        <variable name="photo" type="com.marvelous.betterrank.model.PhotoModel" />
+        <variable name="approved" type="com.marvelous.betterrank.model.ApprovedModel" />
         <variable name="percent" type="Float" />
     </data>
     <FrameLayout

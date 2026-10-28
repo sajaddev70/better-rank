@@ -6,7 +6,7 @@
         <import type="android.view.View"/>
         <variable
             name="viewModel"
-            type="com.marveloushost.betterrank.viewModel.SplashViewModel" />
+            type="com.marvelous.betterrank.viewModel.SplashViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -5,7 +5,7 @@
     <data>
         <variable
             name="photo"
-            type="com.marveloushost.betterrank.model.PhotoModel" />
+            type="com.marvelous.betterrank.model.PhotoModel" />
 
         <variable
             name="isSelected"

@@ -6,7 +6,7 @@
         <import type="android.view.View"/>
         <variable
             name="viewModel"
-            type="com.marveloushost.betterrank.viewModel.CreateNoteViewModel" />
+            type="com.marvelous.betterrank.viewModel.CreateNoteViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -131,7 +131,7 @@
                     android:text="@={viewModel.note.message}"
                     android:id="@+id/et_message"/>
 
-                <com.marveloushost.betterrank.customView.VoiceWaveView
+                <com.marvelous.betterrank.customView.VoiceWaveView
                     android:id="@+id/voiceWaveView"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/default_height"

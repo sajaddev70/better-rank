@@ -4,10 +4,10 @@
 
     <data>
         <variable name="guest"
-            type="com.marveloushost.betterrank.model.GuestModel" />
+            type="com.marvelous.betterrank.model.GuestModel" />
         <variable
             name="viewModel"
-            type="com.marveloushost.betterrank.viewModel.GuestsViewModel" />
+            type="com.marvelous.betterrank.viewModel.GuestsViewModel" />
     </data>
 
     <androidx.cardview.widget.CardView

@@ -6,7 +6,7 @@
         <import type="android.view.View"/>
         <variable
             name="viewModel"
-            type="com.marveloushost.betterrank.viewModel.LoginViewModel" />
+            type="com.marvelous.betterrank.viewModel.LoginViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

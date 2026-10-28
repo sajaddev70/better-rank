@@ -11,7 +11,7 @@ plugins {
 }
 
 android {
-    namespace = "com.marveloushost.betterrank"
+    namespace = "com.marvelous.betterrank"
     compileSdk = 36
 
     buildFeatures{
@@ -23,8 +23,8 @@ android {
         applicationId = "com.marvelous.betterrank"
         minSdk = 26
         targetSdk = 36
-        versionCode = 13
-        versionName = "1.1.2"
+        versionCode = 1
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

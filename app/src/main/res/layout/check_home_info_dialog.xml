@@ -6,7 +6,7 @@
     <data>
         <variable
             name="home"
-            type="com.marveloushost.betterrank.model.AirBnbResponseModel" />
+            type="com.marvelous.betterrank.model.AirBnbResponseModel" />
     </data>
 
     <LinearLayout

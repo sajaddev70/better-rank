@@ -4,7 +4,7 @@
 
     <data>
         <import type="android.view.View"/>
-        <variable name="viewModel" type="com.marveloushost.betterrank.viewModel.PdfLanguageViewModel" />
+        <variable name="viewModel" type="com.marvelous.betterrank.viewModel.PdfLanguageViewModel" />
     </data>
 
     <FrameLayout

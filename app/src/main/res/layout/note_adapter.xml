@@ -5,10 +5,10 @@
     <data>
         <variable
             name="viewModel"
-            type="com.marveloushost.betterrank.viewModel.BaseViewModel" />
+            type="com.marvelous.betterrank.viewModel.BaseViewModel" />
         <variable
             name="note"
-            type="com.marveloushost.betterrank.model.NoteModel" />
+            type="com.marvelous.betterrank.model.NoteModel" />
     </data>
 
     <androidx.cardview.widget.CardView

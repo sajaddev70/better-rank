@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <variable name="dialog" type="com.marveloushost.betterrank.dialog.PhotoHomeDownloadDialog" />
+        <variable name="dialog" type="com.marvelous.betterrank.dialog.PhotoHomeDownloadDialog" />
         <variable name="selectedCount" type="Integer" />
         <variable name="totalCount" type="Integer" />
     </data>

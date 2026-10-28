@@ -947,9 +947,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d49b128-5322-479b-83da-53fd97c649f5" name="Changes" comment="logs trned off">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file/photo_5985612354269417122_y.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -957,9 +955,216 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/marveloushost/betterrank/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/marvelous/betterrank/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/BindingAdapters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/BindingAdapters.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/Event.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/Event.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/AirbnbPhotoAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/AirbnbPhotoAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/BaseAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/BaseAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/CalendarRowAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/CalendarRowAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/ChoseAvatarAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/ChoseAvatarAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/GuestAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/GuestAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/HomeGuidePagerAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/HomeGuidePagerAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/ImageAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/ImageAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/ImagePickerAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/ImagePickerAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/IntroAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/IntroAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/MessagesAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/MessagesAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/MultiImagePickerAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/MultiImagePickerAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/NoteAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/NoteAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/PhotoHomeAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/PhotoHomeAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/ReviewAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/ReviewAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/adapter/SectionPhotoAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/adapter/SectionPhotoAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/customView/AirbnbPdfGenerator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/customView/AirbnbPdfGenerator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/customView/TakePhoto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/customView/TakePhoto.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/customView/VoiceWaveView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/customView/VoiceWaveView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/AnalyzingDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/AnalyzingDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/BottomSheetDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/BottomSheetDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/ChangeProfileDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/ChangeProfileDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/CheckHomeInfoDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/CheckHomeInfoDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/CityGuideDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/CityGuideDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/GuestAddBookingBottomSheet.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/GuestAddBookingBottomSheet.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/HomeGuideDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/HomeGuideDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/ImagePickerDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/ImagePickerDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/LogoutDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/LogoutDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/MultiImagePickerDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/MultiImagePickerDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/PhotoHomeDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/PhotoHomeDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/PhotoHomeDownloadDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/PhotoHomeDownloadDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/PhotoHomeResultDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/PhotoHomeResultDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/PopUpDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/PopUpDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/ProblemImageDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/ProblemImageDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/ReminderManagerDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/ReminderManagerDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/SelectImageDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/SelectImageDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/dialog/SendHouseInstructionsDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/dialog/SendHouseInstructionsDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fileManager/DownloadHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fileManager/DownloadHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fileManager/FilePickerHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fileManager/FilePickerHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fileManager/ImageHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fileManager/ImageHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/AiAssistant.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/AiAssistant.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/BaseFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/BaseFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/ByGuestsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/ByGuestsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/CalendarFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/CalendarFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/Home.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/Home.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/MessagesFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/MessagesFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/Notes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/Notes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/homeguide/HomeGuideFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/homeguide/HomeGuideFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/homeguide/Section1Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/homeguide/Section1Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/homeguide/Section2Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/homeguide/Section2Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/homeguide/Section3Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/homeguide/Section3Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/homeguide/Section4Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/homeguide/Section4Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/homeguide/Section5Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/homeguide/Section5Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/homeguide/Section6Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/homeguide/Section6Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/homeguide/Section7Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/homeguide/Section7Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/homeguide/Section8Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/homeguide/Section8Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/fragment/homeguide/Section9Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/fragment/homeguide/Section9Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/guestdataextraction/GuestImageExtractor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/guestdataextraction/GuestImageExtractor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/guestdataextraction/ImageExtractionController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/guestdataextraction/ImageExtractionController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/hilt/HiltApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/hilt/HiltApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/hilt/modual/HiltAppRepositoryModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/hilt/modual/HiltAppRepositoryModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/hilt/modual/HiltNetworkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/hilt/modual/HiltNetworkModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/hilt/modual/HiltSharedPrefModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/hilt/modual/HiltSharedPrefModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/instructionstranslation/InstructionsTranslationService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/instructionstranslation/InstructionsTranslationService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/instructionstranslation/InstructionsTranslator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/instructionstranslation/InstructionsTranslator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/instructionstranslation/TranslationForegroundServiceInstructions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/instructionstranslation/TranslationForegroundServiceInstructions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/instructionstranslation/TranslationRepositoryInstructions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/instructionstranslation/TranslationRepositoryInstructions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/instructionstranslation/com/marveloushost/betterrank/instructionstranslation/SharedPrefsInstructions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/instructionstranslation/com/marveloushost/betterrank/instructionstranslation/SharedPrefsInstructions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/mediaManager/SpeechToTextManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/mediaManager/SpeechToTextManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/mlKit/MlKitHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/mlKit/MlKitHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/AirBnbRequestModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/AirBnbRequestModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/AirBnbResponseModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/AirBnbResponseModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/ApprovedModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/ApprovedModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/ArrangementDetail.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/ArrangementDetail.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/BaseModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/BaseModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/CityGuideModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/CityGuideModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/GuestModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/GuestModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/HomeGuideModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/HomeGuideModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/HomeModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/HomeModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/IntroModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/IntroModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/MessageHistoryModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/MessageHistoryModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/MessageSummaryModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/MessageSummaryModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/NoteModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/NoteModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/PhotoModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/PhotoModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/PhotoName.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/PhotoName.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/model/UserModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/model/UserModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/networkMonitor/LiveNetworkMonitor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/networkMonitor/LiveNetworkMonitor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/networkMonitor/NetworkMonitor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/networkMonitor/NetworkMonitor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/networkMonitor/NetworkMonitorInterceptor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/networkMonitor/NetworkMonitorInterceptor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/networkMonitor/NoNetworkException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/networkMonitor/NoNetworkException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/pdf/MutableSingleLiveEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/pdf/MutableSingleLiveEvent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/pdf/PdfGenerationTrigger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/pdf/PdfGenerationTrigger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/pdf/TranslationForegroundService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/pdf/TranslationForegroundService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/pdf/TranslationManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/pdf/TranslationManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/pdf/TranslationState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/pdf/TranslationState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/permissionManager/PermissionManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/permissionManager/PermissionManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/reminder/AlarmDismissReceiver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/reminder/AlarmDismissReceiver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/reminder/AlarmReceiver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/reminder/AlarmReceiver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/reminder/AlarmSoundService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/reminder/AlarmSoundService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/reminder/ReminderScheduler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/reminder/ReminderScheduler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/repository/AppRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/repository/AppRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/repository/TranslationRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/repository/TranslationRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/retrofit/RequestApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/retrofit/RequestApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/AIAnalysisActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/AIAnalysisActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/AddGuestActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/AddGuestActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/BaseActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/CityGuide.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/CityGuide.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/CreateNote.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/CreateNote.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/EditGuestActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/EditGuestActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/Guests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/Guests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/HomeGuide.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/HomeGuide.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/HomeRegister.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/HomeRegister.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/InstructionTranslationActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/InstructionTranslationActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/Intro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/Intro.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/Login.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/Login.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/MessagingActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/MessagingActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/PdfLanguageSelection.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/PdfLanguageSelection.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/PhotoSectionActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/PhotoSectionActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/PhotographyGuide.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/PhotographyGuide.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/PhotographyHome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/PhotographyHome.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/Register.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/Register.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/ReviewAnalysisActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/ReviewAnalysisActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/Reviews.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/Reviews.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/Splash.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/Splash.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/ui/Web.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/ui/Web.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/util/DateUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/util/DateUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/util/Prefs.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/util/Prefs.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/util/RemoteConfigManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/util/RemoteConfigManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/validator/Validator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/validator/Validator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/AIAnalysisViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/AIAnalysisViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/AddGuestViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/AddGuestViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/AiAssistantViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/AiAssistantViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/BaseViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/BaseViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/CityGuideViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/CityGuideViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/CreateNoteViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/CreateNoteViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/EditGuestViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/EditGuestViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/GuestsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/GuestsViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/HomeGuideViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/HomeGuideViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/HomeRegisterViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/HomeRegisterViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/HomeViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/HomeViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/IntroViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/IntroViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/LoginViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/LoginViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/MainViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/MainViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/MessagesViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/MessagesViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/NotesViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/NotesViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/PdfLanguageViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/PdfLanguageViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/PhotographyGuideViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/PhotographyGuideViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/PhotographyHomeViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/PhotographyHomeViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/RegisterViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/RegisterViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/ReviewAnalysisViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/ReviewAnalysisViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/ReviewsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/ReviewsViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/SendInstructionsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/SendInstructionsViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/SingleLiveEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/SingleLiveEvent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/SplashViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/SplashViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/marveloushost/betterrank/viewModel/WebViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/marvelous/betterrank/viewModel/WebViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_guest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_guest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_guest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_guest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_instruction_translation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_instruction_translation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_review_analysis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_review_analysis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ai_analysis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ai_analysis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/ai_assistant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ai_assistant.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/check_home_info_dialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/check_home_info_dialog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/city_guide.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/city_guide.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/create_note.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/create_note.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_by_guests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_by_guests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_homeguide_section9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_messages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_messages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/guests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/guests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/home_guide.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/home_guide.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/home_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/home_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/include_add_guest_cards.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/include_add_guest_cards.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/intro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/intro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/intro_adapter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/intro_adapter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_guest_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_guest_card.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_message_guest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_message_guest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/note_adapter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/note_adapter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/notes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/notes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/pdf_language_selection.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/pdf_language_selection.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/photo_home_adapter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/photo_home_adapter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/photo_home_download_dialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/photo_home_download_dialog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/photo_home_result_dialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/photo_home_result_dialog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/photography_guide.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/photography_guide.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/photography_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/photography_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/review_adapter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/review_adapter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/reviews.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/reviews.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/marveloushost/betterrank/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/marvelous/betterrank/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -969,7 +1174,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=R5CY54X73ZR)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -1004,7 +1209,7 @@
     </option>
   </component>
   <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="C:\Users\intel\StudioProjects\better-rank\key\living_maples_keystore_better_rank.jks" />
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/key/living_maples_keystore_better_rank.jks" />
     <option name="KEY_ALIAS" value="better_rank" />
     <option name="REMEMBER_PASSWORDS" value="true" />
     <option name="BUILD_TARGET_KEY" value="apk" />
@@ -1023,12 +1228,12 @@
     &quot;assignee&quot;: &quot;navidtahmaasbi&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sajaddev70/better-rank.git&quot;,
-    &quot;accountId&quot;: &quot;d0fa5091-1476-4760-9e06-1f46770fdedb&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/sajaddev70/better-rank.git",
+    "accountId": "89228836-2a2b-4d75-bf2b-36fdb814df5a"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -1044,38 +1249,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
-    &quot;ApkExportedModule&quot;: &quot;BetterRank.app&quot;,
-    &quot;BundleExportedModule&quot;: &quot;BetterRank.app&quot;,
-    &quot;ExportApk.ApkPathForBetterRank.app&quot;: &quot;C:\\Users\\intel\\Documents\\New folder (2)&quot;,
-    &quot;ExportBundle.BundlePathForBetterRank.app&quot;: &quot;C:\\Users\\AkaiQtz\\Desktop\\BetterRank\\app&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/andrioddeveloper/Downloads/BetterRank/file&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Dependencies&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "ApkExportedModule": "BetterRank.app",
+    "BundleExportedModule": "BetterRank.app",
+    "ExportApk.ApkPathForBetterRank.app": "/Volumes/developer",
+    "ExportBundle.BundlePathForBetterRank.app": "C:\\Users\\AkaiQtz\\Desktop\\BetterRank\\app",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/andrioddeveloper/Downloads/BetterRank/file",
+    "project.structure.last.edited": "Dependencies",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "show.migrate.to.gradle.popup": "false"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ExportApk.BuildVariants&quot;: [
-      &quot;release&quot;
+  "keyToStringList": {
+    "ExportApk.BuildVariants": [
+      "release"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/file" />
@@ -1085,11 +1290,11 @@
       <recent name="C:\Users\AkaiQtz\Desktop\BetterRank\app\src\main\res\drawable" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/file" />
       <recent name="$PROJECT_DIR$/key" />
       <recent name="C:\Users\AkaiQtz\Desktop\BetterRank\app\src\main\res\drawable" />
       <recent name="C:\Users\AkaiQtz\Desktop\BetterRank\app\src\main\res\layout" />
-      <recent name="C:\Users\AkaiQtz\Desktop\BetterRank\app\src\main\res\values" />
     </key>
     <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
       <recent name="com.marveloushost.betterrank.guestdataextraction" />
@@ -1100,12 +1305,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" IS_LOCATION_SIMULATION_SUPPORTED="false" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" DEVELOPMENT_TEAM="${TEAM_ID}" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
-      <embedded_app_extension_list />
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="BetterRank.app" />
       <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
@@ -1127,6 +1326,8 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Auto" />
       <Auto>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
@@ -1135,6 +1336,7 @@
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
         <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Auto>
       <Hybrid>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
@@ -1143,9 +1345,11 @@
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
         <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Hybrid>
       <Java>
         <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Java>
       <Native>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
@@ -1154,6 +1358,7 @@
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
         <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
@@ -1172,6 +1377,12 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" IS_LOCATION_SIMULATION_SUPPORTED="false" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" DEVELOPMENT_TEAM="${TEAM_ID}" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -1181,14 +1392,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761043378947</updated>
-    </task>
-    <task id="LOCAL-00095" summary="dynamic keys">
-      <option name="closed" value="true" />
-      <created>1765123030938</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1765123030938</updated>
     </task>
     <task id="LOCAL-00096" summary="restore state worked">
       <option name="closed" value="true" />
@@ -1574,7 +1777,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792790364598</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="logs trned off">
+      <option name="closed" value="true" />
+      <created>1793187231554</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1793187231554</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1634,6 +1845,16 @@
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
       <map>
+        <entry key="com.marvelous.betterrank">
+          <value>
+            <CheckInfo lastCheckTimestamp="1793204638065" />
+          </value>
+        </entry>
+        <entry key="com.marvelous.betterrank.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1793204638065" />
+          </value>
+        </entry>
         <entry key="com.marveloushost.betterrank">
           <value>
             <CheckInfo lastCheckTimestamp="1792790369586" />

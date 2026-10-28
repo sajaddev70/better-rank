@@ -6,7 +6,7 @@
         <import type="android.view.View"/>
         <variable
             name="viewModel"
-            type="com.marveloushost.betterrank.viewModel.CityGuideViewModel" />
+            type="com.marvelous.betterrank.viewModel.CityGuideViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
